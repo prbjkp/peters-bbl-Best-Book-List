@@ -1,0 +1,51 @@
+css {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: linear-gradient(to right, lightgreen, lightblue);
+}
+h1 {
+  color: maroon;
+  font-size: 50px;
+  font-family:  "Yeseva One", serif;
+}
+h2 {
+  color: slateblue;
+  font-size: 22px;
+  font-family: "Yeseva One", serif;
+}
+h3 {
+  color: darkslategray;
+  font-size: 15px;
+  font-family:  "Yeseva One", serif;
+}
+p1 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  color: transparent; /* Make the text transparent */
+  font-size: 2rem;
+  font-family: 'Almendra SC';
+  font-size: 40px;
+  font-size-adjust: yes;
+}
+ol {
+  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  margin-right: 40px;
+  color: transparent; /* Make the text transparent */
+  font-size: 20px;
+  font-family: "Apace Mono", monospace;
+}
+
+p2 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  color: transparent; /* Make the text transparent */
+  font-size: 2rem;
+  font-family: 'Almendra SC';
+  font-size: 40px;
+}
