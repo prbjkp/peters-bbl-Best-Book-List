@@ -49,3 +49,13 @@ p2 {
   font-family: 'Almendra SC';
   font-size: 40px;
 }
+
+p3 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  color: transparent; /* Make the text transparent */
+  font-size: 2rem;
+  font-family: 'Almendra SC';
+  font-size: 40px;
+}
