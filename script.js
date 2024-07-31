@@ -44,23 +44,21 @@ document.querySelector("p2").onmouseover = event => {
 }
 
 document.querySelector("p3").onmouseover = event => {
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let iterations = 0;
-  const originalText = event.target.dataset.value;
-  const interval = setInterval(() => {
-    event.target.innerText = originalText.split("")
+  const interval = setInterval(() => { // Corrected the placement of the opening parenthesis
+    event.target.innerText = event.target.innerText.split("")
       .map((letter, index) => {
         if (index < iterations) {
-          return originalText[index];
+          return event.target.dataset.value[index];
         } else {
-          return letters[Math.floor(Math.random() * letters.length)];
+          return letters[Math.floor(Math.random() * 26)];
         }
-      }).join("");
+      }).join(""); // Corrected the method name to 'join'
 
-    if (iterations >= originalText.length) {
-      clearInterval(interval);
+    if (iterations >= event.target.dataset.value.length) {
+      clearInterval(interval); // Corrected the method name to 'clearInterval'
     }
 
-    iterations += 1;
+    iterations += 1 / 1;
   }, 30);
 }
