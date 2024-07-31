@@ -42,3 +42,24 @@ document.querySelector("p2").onmouseover = event => {
     iterations += 1 / 1;
   }, 30);
 }
+
+document.querySelector("p3").onmouseover = event => {
+  let iterations = 0;
+  const interval = setInterval(() => { // Corrected the placement of the opening parenthesis
+    event.target.innerText = event.target.innerText.split("")
+      .map((letter, index) => {
+        if (index < iterations) {
+          return event.target.dataset.value[index];
+        } else {
+          return letters[Math.floor(Math.random() * 26)];
+        }
+      }).join(""); // Corrected the method name to 'join'
+
+    if (iterations >= event.target.dataset.value.length) {
+      clearInterval(interval); // Corrected the method name to 'clearInterval'
+    }
+
+    iterations += 1 / 1;
+  }, 30);
+}
+
