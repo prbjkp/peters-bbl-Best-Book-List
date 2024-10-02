@@ -30,7 +30,7 @@ p1 {
   font-size: 40px;
   font-size-adjust: yes;
 }
-p4 {
+ul {
   background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
