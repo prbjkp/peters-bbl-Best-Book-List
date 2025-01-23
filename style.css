@@ -59,3 +59,21 @@ p3 {
   font-family: 'Almendra SC';
   font-size: 40px;
 }
+p5 {
+  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  margin-right: 40px;
+  color: transparent; /* Make the text transparent */
+  font-size: 20px;
+  font-family: "Apace Mono", monospace;
+}
+p6 {
+  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  margin-right: 40px;
+  color: transparent; /* Make the text transparent */
+  font-size: 20px;
+  font-family: "Apace Mono", monospace;
+}
