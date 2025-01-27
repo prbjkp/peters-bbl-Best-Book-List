@@ -17,6 +17,7 @@ body {
 /* Header styles */
 h1 {
   text-align: center;
+  margin-top:30px;
   color: maroon;
   font-size: 50px;
   font-family: "Yeseva One", serif;
