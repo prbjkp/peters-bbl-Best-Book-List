@@ -59,7 +59,7 @@ p4, p5, p6 {
 ol {
   list-style-type: none; /* Removes the default numbering */
   padding-left: 0;
-  font-size: 10px; /* Removes padding */
+  font-size: 30px; /* Removes padding */
 }
 
 ol li {
