@@ -1,84 +1,60 @@
-css {
+/* Full width and height for the page */
+html, body {
   height: 100%;
   width: 100%;
 }
+
+/* Background gradient */
 body {
   background-image: linear-gradient(to right, lightgreen, lightblue);
 }
+
+/* Header styles */
 h1 {
+  text-align: center;
   color: maroon;
   font-size: 50px;
-  font-family:  "Yeseva One", serif;
+  font-family: "Yeseva One", serif;
 }
+
+h2, h3, h4 {
+  font-family: "Yeseva One", serif;
+}
+
 h2 {
   color: slateblue;
   font-size: 22px;
-  font-family: "Yeseva One", serif;
-}
-h3 {
-  color: darkslategray;
-  font-size: 15px;
-  font-family:  "Yeseva One", serif;
-}
-h4 {
-  color: darkslategray;
-  font-size: 15px;
-  font-family:  "Yeseva One", serif;
-}
-p1 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  color: transparent; /* Make the text transparent */
-  font-size: 2rem;
-  font-family: 'Almendra SC';
-  font-size: 40px;
-  font-size-adjust: yes;
-}
-p4 {
-  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  margin-right: 40px;
-  color: transparent; /* Make the text transparent */
-  font-size: 20px;
-  font-family: "Apace Mono", monospace;
 }
 
-p2 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  color: transparent; /* Make the text transparent */
-  font-size: 2rem;
-  font-family: 'Almendra SC';
-  font-size: 40px;
+h3, h4 {
+  color: darkslategray;
+  font-size: 15px;
 }
 
-p3 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
+/* Styling for custom p tags with gradients */
+p1, p2, p3, p4, p5, p6 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   color: transparent; /* Make the text transparent */
-  font-size: 2rem;
-  font-family: 'Almendra SC';
   font-size: 40px;
+  font-family: 'Almendra SC';
 }
-p5 {
-  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  margin-right: 40px;
-  color: transparent; /* Make the text transparent */
-  font-size: 20px;
+
+/* Special gradient for p4, p5, p6 */
+p4, p5, p6 {
+  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected gradient definition */
   font-family: "Apace Mono", monospace;
+  margin-right: 40px;
+  font-size: 20px;
 }
-p6 {
-  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected the gradient definition 
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  margin-right: 40px;
-  color: transparent; /* Make the text transparent */
-  font-size: 20px;
-  font-family: "Apace Mono", monospace;
+
+/* Spacing and alignment adjustments for lists */
+ol {
+  list-style-type: none; /* Removes the default numbering */
+  padding-left: 0; /* Removes padding */
+}
+
+ol li {
+  margin-bottom: 10px; /* Space between list items */
 }
