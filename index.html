@@ -3,40 +3,7 @@
   <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
-  <style>
-      ol {
-          margin-left: 20px;
-      }
 
-.popup-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-
-  </style>
 <head>
 <link rel="shortcut icon" type="book-icon" href="p.png">
   <meta charset="utf-8">
@@ -58,24 +25,73 @@ I'm an expert, trust me <br>
 <button id="popup-box">Click Me?</button>
 <div id="popup-content"></div>
 <script>
-  document.getElementById('popup-box').addEventListener('click', function() {
+  document.getElementById('popup-box').addEventListener('click', function () {
       var popupContainer = document.getElementById('popup-content');
       var popupBox = document.createElement('div');
       var closeButton = document.createElement('span');
+      var image = document.createElement('img'); // Add an image element
 
       popupBox.className = 'popup-box';
-      popupBox.innerHTML = '<div class="popup-content">This is a popup box.</div>';
-      closeButton.className = 'close-box';
+      popupBox.innerHTML = '<div class="popup-content">This is a popup box with an image.</div>';
+
+      // Configure the close button
+      closeButton.className = 'close-btn';
       closeButton.innerHTML = '&times;';
 
+      // Configure the image
+      image.src = '/workspaces/peters-bbl-Best-Book-List/81pJXhRLdoL.jpg'; // Replace with your image URL
+      image.alt = 'Popup Image';
+      image.style.width = '150px'; // Set the image dimensions
+      image.style.marginTop = '20px'; // Add some spacing
+
+      // Append the close button and image to the popup box
       popupBox.appendChild(closeButton);
+      popupBox.appendChild(image);
+
+      // Append the popup box to the container
       popupContainer.appendChild(popupBox);
 
-      closeButton.addEventListener('click', function() {
+      // Close button functionality
+      closeButton.addEventListener('click', function () {
           popupContainer.removeChild(popupBox);
       });
   });
 </script>
+<style>
+  ol {
+      margin-left: 20px;
+  }
+
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center the text and image */
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px; /* Adjust to move closer to the popup box top */
+    right: 5px; /* Adjust to move closer to the popup box right edge */
+    cursor: pointer;
+    font-size: 24px; /* Make it slightly larger for visibility */
+    color: red; /* Optional: Make it stand out */
+}
+</style>
 
 <!-- Other context for the website, felt it was not needed so made it a note for now-->
 <!--<fieldset>
