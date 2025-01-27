@@ -42,8 +42,7 @@ document.querySelector("p2").onmouseover = event => {
     iterations += 1 / 1;
   }, 30);
 }
-
-document.querySelector("p3").onmouseover = event => {
+document.querySelector(" ").onmouseover = event => {
   let iterations = 0;
   const interval = setInterval(() => { // Corrected the placement of the opening parenthesis
     event.target.innerText = event.target.innerText.split("")
