@@ -58,7 +58,8 @@ p4, p5, p6 {
 /* Spacing and alignment adjustments for lists */
 ol {
   list-style-type: none; /* Removes the default numbering */
-  padding-left: 0; /* Removes padding */
+  padding-left: 0;
+  font-size: 10px; /* Removes padding */
 }
 
 ol li {
