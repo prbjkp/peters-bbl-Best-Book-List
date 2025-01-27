@@ -12,6 +12,26 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
+<script>
+  // JavaScript to handle navigation
+  document.getElementById('home-link').addEventListener('click', function () {
+    showPage('home');
+  });
+
+  document.getElementById('newpage-link').addEventListener('click', function () {
+    showPage('newpage');
+  });
+
+  function showPage(pageId) {
+    // Hide all pages
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+
+    // Show the selected page
+    document.getElementById(pageId).classList.add('active');
+  }
+</script>
+
 <body>
   <h1 data-value="Peters Best Books List">Peters Best Books List</h1>
   <nav>
