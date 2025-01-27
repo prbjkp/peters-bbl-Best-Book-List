@@ -1,149 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Almendra+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
-<head>
-<link rel="shortcut icon" type="book-icon" href="p.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Peter's BBL</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <head>
+    <link rel="shortcut icon" type="book-icon" href="p.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Peter's BBL</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        text-align: center;
+      }
 
+      .page {
+        display: none; /* Hide all pages by default */
+      }
 
-<body>
-  <h1 data-value="Peters Best Books List">Peters Best Books List</h1>
-  <nav>
-    <a id="home-link">Home</a>
-    <a id="newpage-link">New Page</a>
-  </nav>
-  <div id="home" class="page active">
-    <h4>Welcome to the Home Page</h4>
-    <p>This is the main page of the website.</p>
-  </div>
+      .page.active {
+        display: block; /* Show only the active page */
+      }
 
-<fieldset>
-  <h2><em>Preface:</em><br>
-You should read these books <br>
-I'm an expert, trust me <br>
-<em>Qualifications:</em> I read
-</h2>
-</fieldset>
+      nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-// Other context for the website, felt it was not needed so made it a note for now-->
-<!--<fieldset>
-  <h3>
-       <em>Content and General website Info:</em><br>
-       This website is fairly basic, due to my lack of HTML, JS, and CSS knowledge, however the organization of this site should be fairly O.K. It will be organized by lists of my top 10 books per genre, and then there will be a way  (click or scroll, tbd later) to see more info on the top 3 books, and a likely summary of most of the others and my personal rating, out of 10 stars. That's it, any feedback can be sent to me, and I will act on it as soon as possible.
-    </h3>
-</fieldset> -->
+  <body>
+    <h1 data-value="Peters Best Books List">Peters Best Books List</h1>
+    <nav>
+      <a id="home-link">Home</a>
+      <a id="newpage-link">New Page</a>
+    </nav>
 
-<br>
-</h2>
-  <section>
-    <fieldset>
-  <p1 data-value="MY TOP 12 RECCOMENDED FANTASY BOOKS">MY TOP 12 RECCOMENDED FANTASY BOOKS</p1> <br>
-  <p4> 
-    1.  Stormlight Archive - <em>Brandon Sanderson</em> <br>
-    2.  Cradle - <em>Will Wight</em> <br>
-    3.  Stormweaver - <em>Bryce O' Connor</em> <br>
-    4.  House of Blades - <em>Will Wight</em> <br>
-    5.  The Last Horizon - <em>Will Wight</em> <br>
-    6.  Boul of Souls - <em>Trevor H. Cooley</em> <br>
-    7.  Mistborn - <em>Brandon Sanderson</em> <br> 
-    8.  The Rithmatist - <em>Brandon Sanderson</em> <br>
-    9.  Tress of the Emerald Sea - <em>Brandon Sanderson</em> <br>
-    10. The Reckoners - <em>Brandon Sanderson</em> <br>
-    11. Mage Errant - <em>John Bierce</em> <br>
-    12. The Saga of the Nothing Mage - <em>J.P. Valentine</em> <br>
-</p4>
+    <!-- Home Page Content -->
+    <div id="home" class="page active">
+      <h4>Welcome to the Home Page</h4>
+      <p>This is the main page of the website.</p>
 
-    </fieldset>
-    <br>
-    <fieldset>
-        <p2 data-value="MY TOP 6 NON-FANTASY RECCOMENDED BOOKS">MY TOP 6 NON-FANTASY RECCOMENDED BOOKS</p2><br>
-    <p5>
-       1. Project Hail Mary - <em>Andy Weir</em><br>
-       2. Hungar Games - <em>Suzanne Collins</em><br>
-       3. Inheritance Games - <em>Jennifer Lynn Barnes</em><br>
-       4. Legion - <em>Brandon Sanderson</em><br>
-       5. Skyward - <em>Brandon Sanderson</em><br>
-       6. Dune - <em>Frank Herbert</em><br>
-   </p5>
-    </fieldset>
-    <br>
-    <!--
-    <fieldset>
-      <p3 data-value="TOP RECCOMENDED BOOKS FOR 12 AND UNDER">TOP RECCOMENDED BOOKS FOR 12 AND UNDER</p3<br>
-      <p6>
-        1. Harry Potter - <em>J.K. Rowling</em><br>
-        2. Daughter of the Deep - <em>Rick Riordan</em><br>
-        3. Keeper of the Lost Cities - <em>Shannon Messenger</em><br>
-        4. Artimis Fowl - <em>Eoin Colfer</em><br>
-        5. Hardy Boys Mysteries - <em>Franklin W. Dixon, David L. Robbins</em><br>
-        6. Wonder - <em>R. J. Palacio</em><br>
-        7. Percy Jackson - <em>Rick Riordan</em><br>
-        8. The Chronicles of Narnia - <em>C. S. Lewis</em><br>
-     </p6>
-    </fieldset>
-</section>
-<div id="blob"></div>
-<div id="blur"></div>
-<script src="script.js"></script> -->
-</body>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Single Page with Multiple Views</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      text-align: center;
-    }
-    .page {
-      display: none; /* Hide all pages by default */
-    }
-    .page.active {
-      display: block; /* Show only the active page */
-    }
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: blue;
-      cursor: pointer;
-    }
-  </style>
-</head>
+      <fieldset>
+        <h2><em>Preface:</em><br>
+          You should read these books <br>
+          I'm an expert, trust me <br>
+          <em>Qualifications:</em> I read
+        </h2>
+      </fieldset>
 
+      <section>
+        <fieldset>
+          <h3>MY TOP 12 RECOMMENDED FANTASY BOOKS</h3>
+          <ol>
+            <li>Stormlight Archive - <em>Brandon Sanderson</em></li>
+            <li>Cradle - <em>Will Wight</em></li>
+            <li>Stormweaver - <em>Bryce O'Connor</em></li>
+            <li>House of Blades - <em>Will Wight</em></li>
+            <li>The Last Horizon - <em>Will Wight</em></li>
+            <li>Boul of Souls - <em>Trevor H. Cooley</em></li>
+            <li>Mistborn - <em>Brandon Sanderson</em></li>
+            <li>The Rithmatist - <em>Brandon Sanderson</em></li>
+            <li>Tress of the Emerald Sea - <em>Brandon Sanderson</em></li>
+            <li>The Reckoners - <em>Brandon Sanderson</em></li>
+            <li>Mage Errant - <em>John Bierce</em></li>
+            <li>The Saga of the Nothing Mage - <em>J.P. Valentine</em></li>
+          </ol>
+        </fieldset>
+        <br>
+        <fieldset>
+          <h3>MY TOP 6 NON-FANTASY RECOMMENDED BOOKS</h3>
+          <ol>
+            <li>Project Hail Mary - <em>Andy Weir</em></li>
+            <li>Hunger Games - <em>Suzanne Collins</em></li>
+            <li>Inheritance Games - <em>Jennifer Lynn Barnes</em></li>
+            <li>Legion - <em>Brandon Sanderson</em></li>
+            <li>Skyward - <em>Brandon Sanderson</em></li>
+            <li>Dune - <em>Frank Herbert</em></li>
+          </ol>
+        </fieldset>
+      </section>
+    </div>
 
+    <!-- New Page Content -->
+    <div id="newpage" class="page">
+      <h2>Welcome to the New Page</h2>
+      <p>This is some different information on a separate page.</p>
+    </div>
 
-  <div id="newpage" class="page">
-    <h2>Welcome to the New Page</h2>
-    <p>This is some different information on a separate page.</p>
-  </div>
+    <script>
+      // JavaScript to handle navigation
+      document.getElementById('home-link').addEventListener('click', function () {
+        showPage('home');
+      });
 
-  <script>
-    // JavaScript to handle navigation
-    document.getElementById('home-link').addEventListener('click', function () {
-      showPage('home');
-    });
+      document.getElementById('newpage-link').addEventListener('click', function () {
+        showPage('newpage');
+      });
 
-    document.getElementById('newpage-link').addEventListener('click', function () {
-      showPage('newpage');
-    });
+      function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
 
-    function showPage(pageId) {
-      // Hide all pages
-      const pages = document.querySelectorAll('.page');
-      pages.forEach(page => page.classList.remove('active'));
-
-      // Show the selected page
-      document.getElementById(pageId).classList.add('active');
-    }
-  </script>
-</body>
-
+        // Show the selected page
+        document.getElementById(pageId).classList.add('active');
+      }
+    </script>
+  </body>
 </html>
