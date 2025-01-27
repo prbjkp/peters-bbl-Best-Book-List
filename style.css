@@ -20,6 +20,11 @@ h3 {
   font-size: 15px;
   font-family:  "Yeseva One", serif;
 }
+h4 {
+  color: darkslategray;
+  font-size: 15px;
+  font-family:  "Yeseva One", serif;
+}
 p1 {
   background-image: linear-gradient(to right, blue, green, blue); /* Corrected the gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
