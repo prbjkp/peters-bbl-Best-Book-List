@@ -9,28 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Peter's BBL</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        text-align: center;
-      }
-
-      .page {
-        display: none; /* Hide all pages by default */
-      }
-
-      .page.active {
-        display: block; /* Show only the active page */
-      }
-
-      nav a {
-        margin: 10px;
-        text-decoration: none;
-        color: blue;
-        cursor: pointer;
-      }
-    </style>
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -55,7 +34,7 @@
 
       <section>
         <fieldset>
-          <h3>MY TOP 12 RECOMMENDED FANTASY BOOKS</h3>
+          <p1>MY TOP 12 RECOMMENDED FANTASY BOOKS</p1>
           <ol>
             <li>Stormlight Archive - <em>Brandon Sanderson</em></li>
             <li>Cradle - <em>Will Wight</em></li>
@@ -73,7 +52,7 @@
         </fieldset>
         <br>
         <fieldset>
-          <h3>MY TOP 6 NON-FANTASY RECOMMENDED BOOKS</h3>
+          <p2>MY TOP 6 NON-FANTASY RECOMMENDED BOOKS</p2>
           <ol>
             <li>Project Hail Mary - <em>Andy Weir</em></li>
             <li>Hunger Games - <em>Suzanne Collins</em></li>
@@ -105,11 +84,16 @@
       function showPage(pageId) {
         // Hide all pages
         const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.classList.remove('active'));
+        pages.forEach(page => {
+          page.style.display = 'none';
+        });
 
         // Show the selected page
-        document.getElementById(pageId).classList.add('active');
+        document.getElementById(pageId).style.display = 'block';
       }
+
+      // Set initial page to be visible
+      showPage('home');
     </script>
   </body>
 </html>
