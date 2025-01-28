@@ -6,31 +6,83 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Horizontally center the content */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  background-image: linear-gradient(to right, lightgreen, lightblue);
 }
 
-/* Background gradient */
-body {
-  background-image: linear-gradient(to right, lightgreen, lightblue);
-  padding: 20px; /* Add some padding to prevent content from being flush against the edges */
+/* Wrapper for main content */
+#main-content {
+  width: 90%; /* Make the content responsive */
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 /* Header styles */
 h1 {
-  text-align: center;
-  margin-top: 40px; /* Adjust spacing from the top of the page */
+  margin-top: 50px; /* Space above the header */
   color: maroon;
   font-size: 50px;
   font-family: "Yeseva One", serif;
-  margin-bottom: 20px; /* Add space below the title */
+  margin-bottom: 20px; /* Space below the title */
 }
 
+/* Preface and other headers */
+h2, h3, h4 {
+  font-family: "Yeseva One", serif;
+}
+
+h2 {
+  color: slateblue;
+  font-size: 22px;
+  margin-bottom: 20px; /* Add space below section headers */
+}
+
+h3, h4 {
+  color: darkslategray;
+  font-size: 15px;
+}
+
+/* Styling for custom p tags with gradients */
+p1, p2, p3 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Gradient effect */
+  -webkit-background-clip: text; /* For webkit-based browsers */
+  background-clip: text;
+  color: transparent; /* Text appears as gradient */
+  font-size: 40px;
+  font-family: 'Almendra SC';
+  margin: 20px 0; /* Add space above and below */
+}
+
+p4, p5, p6 {
+  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen);
+  -webkit-background-clip: text; /* Gradient effect */
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-family: "Apace Mono", monospace;
+  margin: 10px 0; /* Add space above and below */
+}
+
+/* List styling */
+ol {
+  list-style-type: decimal; /* Use numbers for ordered lists */
+  padding-left: 20px; /* Add padding for indentation */
+  font-size: 20px;
+  text-align: left; /* Align lists to the left */
+  margin: 20px auto; /* Center lists vertically */
+  max-width: 700px; /* Prevent the list from stretching too wide */
+}
+
+ol li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Styling for the nav element */
 nav {
   display: flex;
-  justify-content: center; /* Center the buttons */
-  gap: 40px; /* Space between the buttons */
-  width: 100%; /* Ensure the buttons align within the page width */
-  margin: 20px 0; /* Add spacing around the navigation */
+  justify-content: center; /* Center the navigation buttons */
+  gap: 40px; /* Space between buttons */
+  margin: 20px 0; /* Space above and below */
 }
 
 nav a {
@@ -39,13 +91,32 @@ nav a {
   font-family: "Yeseva One", serif;
   font-size: 20px;
   cursor: pointer;
+  padding: 10px 20px; /* Add padding inside buttons */
+  border: 2px solid darkblue; /* Add border around buttons */
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
+nav a:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+/* Page content */
 .page {
-  max-width: 80%; /* Prevent content from stretching too wide */
-  text-align: center; /* Center all content */
+  display: none; /* Hide all pages by default */
 }
 
+.page.active {
+  display: block; /* Show the active page */
+}
+
+/* Fieldset styling */
 fieldset {
-  margin-bottom: 20px; /* Add spacing between fieldsets */
+  border: 2px solid slateblue;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.5); /* Light background with transparency */
 }
