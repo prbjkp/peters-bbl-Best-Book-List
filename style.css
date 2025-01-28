@@ -50,7 +50,7 @@ p3, p4 {
   text-align: center;
   color: transparent; /* Make the text transparent */
   font-size: 40px;
-  font-family: 'Almendra SC';
+  font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
 
 /* ng and alignment adjustments for lists */
