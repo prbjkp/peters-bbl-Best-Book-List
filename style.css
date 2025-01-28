@@ -1,122 +1,80 @@
 /* Full width and height for the page */
 html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontally center the content */
-  background-image: linear-gradient(to right, lightgreen, lightblue);
-}
-
-/* Wrapper for main content */
-#main-content {
-  width: 90%; /* Make the content responsive */
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-image: linear-gradient(to right, lightgreen, lightblue); /* Keep the background */
+  font-family: "Yeseva One", serif;
 }
 
 /* Header styles */
 h1 {
-  margin-top: 50px; /* Space above the header */
+  text-align: center;
   color: maroon;
   font-size: 50px;
-  font-family: "Yeseva One", serif;
-  margin-bottom: 20px; /* Space below the title */
+  margin: 40px 0; /* Add margin to prevent it from sticking to the top */
 }
 
-/* Preface and other headers */
-h2, h3, h4 {
-  font-family: "Yeseva One", serif;
-}
-
-h2 {
-  color: slateblue;
-  font-size: 22px;
-  margin-bottom: 20px; /* Add space below section headers */
-}
-
-h3, h4 {
-  color: darkslategray;
-  font-size: 15px;
-}
-
-/* Styling for custom p tags with gradients */
-p1, p2, p3 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Gradient effect */
-  -webkit-background-clip: text; /* For webkit-based browsers */
-  background-clip: text;
-  color: transparent; /* Text appears as gradient */
-  font-size: 40px;
-  font-family: 'Almendra SC';
-  margin: 20px 0; /* Add space above and below */
-}
-
-p4, p5, p6 {
-  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen);
-  -webkit-background-clip: text; /* Gradient effect */
-  background-clip: text;
-  color: transparent;
-  font-size: 20px;
-  font-family: "Apace Mono", monospace;
-  margin: 10px 0; /* Add space above and below */
-}
-
-/* List styling */
-ol {
-  list-style-type: decimal; /* Use numbers for ordered lists */
-  padding-left: 20px; /* Add padding for indentation */
-  font-size: 20px;
-  text-align: left; /* Align lists to the left */
-  margin: 20px auto; /* Center lists vertically */
-  max-width: 700px; /* Prevent the list from stretching too wide */
-}
-
-ol li {
-  margin-bottom: 10px; /* Space between list items */
-}
-
-/* Styling for the nav element */
+/* Navigation styling */
 nav {
   display: flex;
-  justify-content: center; /* Center the navigation buttons */
+  justify-content: center; /* Center navigation buttons */
   gap: 40px; /* Space between buttons */
-  margin: 20px 0; /* Space above and below */
+  margin: 20px 0; /* Add spacing above and below */
 }
 
 nav a {
   text-decoration: none;
   color: darkblue;
-  font-family: "Yeseva One", serif;
   font-size: 20px;
   cursor: pointer;
-  padding: 10px 20px; /* Add padding inside buttons */
-  border: 2px solid darkblue; /* Add border around buttons */
-  border-radius: 10px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
-nav a:hover {
-  background-color: darkblue;
-  color: white;
-}
-
-/* Page content */
+/* Page content wrapper */
 .page {
-  display: none; /* Hide all pages by default */
+  max-width: 80%; /* Prevent overly wide content */
+  margin: 20px auto; /* Center content horizontally with vertical spacing */
+  text-align: center; /* Center align text */
 }
 
-.page.active {
-  display: block; /* Show the active page */
-}
-
-/* Fieldset styling */
+/* Fieldset spacing */
 fieldset {
-  border: 2px solid slateblue;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.5); /* Light background with transparency */
+  margin-bottom: 20px; /* Space between sections */
+  padding: 10px; /* Add padding inside fieldsets */
+  border: 1px solid slateblue;
+}
+
+/* Styling for lists */
+ol {
+  list-style-type: decimal; /* Keep numbering */
+  padding-left: 20px; /* Indent lists */
+  font-size: 20px; /* Adjust font size for readability */
+}
+
+/* Gradient text for custom elements */
+p1, p2, p3 {
+  background-image: linear-gradient(to right, blue, green, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  margin: 20px 0; /* Add spacing around these elements */
+}
+
+/* Gradient text for p4, p5, p6 */
+p4, p5, p6 {
+  background-image: linear-gradient(to right, darkgreen, green, darkgreen);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Buttons and other interactive elements */
+button {
+  margin: 10px;
 }
