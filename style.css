@@ -34,6 +34,7 @@ h2 {
   color: slateblue;
   font-size: 22px;
   text-align: center;
+  font: message-box;
 }
 
 h3, h4 {
