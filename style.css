@@ -25,18 +25,13 @@ h1 {
   margin-bottom: 20px; /* Add space below the title */
 }
 
-h2 {
+h2, h5 {
   color: slateblue;
   font-size:40px;
   text-align: center;
   font: message-box;
 }
-h5 {
-  color: slateblue;
-  font-size:40px;
-  text-align: center;
-  font: message-box;
-}
+
 /*notre ofas */
 h3, h4 {
   color: darkslategray;
