@@ -54,13 +54,13 @@ p4, p6, p5 {
 }
 
 h3 {
-  color: rgb(0, 0, 0);
+  color: maroon;
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   text-align: center;
   color: transparent; /* Make the text transparent */
   font-size: 40px;
-  font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+  font-family: 'Almendra SC';
 }
 
 /* ng and alignment adjustments for lists */
