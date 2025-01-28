@@ -52,8 +52,9 @@ p4, p6, p5 {
   font-size: 40px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
+
 p3 {
-  color: maroon;
+  color: rgb(0, 0, 0);
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   text-align: center;
