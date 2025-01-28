@@ -25,7 +25,7 @@ h1 {
   margin-bottom: 20px; /* Add space below the title */
 }
 
-h2, h5 {
+h2 {
   color: slateblue;
   font-size:40px;
   text-align: center;
@@ -43,6 +43,15 @@ h3, h4 {
 
 /* Styling for custom p tags with gradients */
 p1, p2, p3, p4, p5, p6, p7 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  text-align: center;
+  color: transparent; /* Make the text transparent */
+  font-size: 40px;
+  font-family: 'Almendra SC';
+}
+h5 {
   background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
