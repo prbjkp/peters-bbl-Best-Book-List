@@ -83,6 +83,7 @@ nav {
   width: 60%; /* Adjust width as needed */
   margin-top: 20px; /* Space above buttons */
   margin-bottom: 20px;
+  text-align: center;
 }
 
 nav a {
