@@ -53,7 +53,7 @@ p4, p6, p5 {
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
 
-p3 {
+h3 {
   color: rgb(0, 0, 0);
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
