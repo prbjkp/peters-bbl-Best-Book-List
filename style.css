@@ -87,13 +87,15 @@ nav {
 }
 
 nav a {
-  margin: 20 20px; /* Space between buttons */
+  margin: 20px 20px; /* Space between buttons */
   text-decoration: none;
   color: darkblue;
   font-family: "Yeseva One", serif;
   font-size: 20px;
   cursor: pointer;
   text-align: center;
+  vertical-align: center;
+
 }
 
 .page {
