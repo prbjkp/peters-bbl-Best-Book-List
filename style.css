@@ -80,7 +80,7 @@ ol li {
 nav {
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 60%; /* Adjust width as needed */
   margin-top: 20px; /* Space above buttons */
   margin-bottom: 20px;
