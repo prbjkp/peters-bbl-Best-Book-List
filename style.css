@@ -31,7 +31,6 @@ h2 {
   text-align: center;
   font: message-box;
 }
-
 /*notre ofas */
 h3, h4 {
   color: darkslategray;
@@ -61,7 +60,15 @@ h5 {
   font-family: 'Almendra SC';
 }
 
-
+h6 {
+  background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  text-align: center;
+  color: transparent; /* Make the text transparent */
+  font-size: 40px;
+  font-family: 'Almendra SC';
+}
 /* Spacing and alignment adjustments for lists */
 ol {
   list-style-type: none; /* Removes the default numbering */
