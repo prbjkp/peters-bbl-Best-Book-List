@@ -25,14 +25,14 @@ h1 {
   margin-bottom: 20px; /* Add space below the title */
 }
 
-h2, h3, h4 {
+h3, h4 {
   font-family: "Yeseva One", serif;
   text-align: center;
 }
 
 h2 {
   color: slateblue;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   font: message-box;
 }
