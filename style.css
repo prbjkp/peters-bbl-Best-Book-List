@@ -34,7 +34,7 @@ h2 {
 
 p6, p7 {
   color: cadetblue;
-  font-size:20px;
+  font-size:15px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -75,6 +75,12 @@ ol {
   padding-left: 0;
   text-align: center;
   font-size: 30px; /* Removes padding */
+}
+ol1, ol2 {
+  list-style-type: none; /* Removes the default numbering */
+  padding-left: 0;
+  text-align: center;
+  font-size: 10px; /* Removes padding */
 }
 
 ol li {
