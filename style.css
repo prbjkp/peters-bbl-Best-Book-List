@@ -1,60 +1,80 @@
 /* Full width and height for the page */
 html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
-  margin: 0;
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stacks elements vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-}
-
-/* Background gradient */
-body {
-  background-image: linear-gradient(to right, lightgreen, lightblue);
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-image: linear-gradient(to right, lightgreen, lightblue); /* Keep the background */
+  font-family: "Yeseva One", serif;
 }
 
 /* Header styles */
 h1 {
-  text-align: center; /* Ensure the title is centered */
-  margin-top: 20px; /* Add space at the top */
+  text-align: center;
   color: maroon;
   font-size: 50px;
-  font-family: "Yeseva One", serif;
+  margin: 40px 0; /* Add margin to prevent it from sticking to the top */
 }
 
-h2 {
-  text-align: center; /* Ensure subtitles are centered */
-  color: slateblue;
-  font-size: 22px;
-  font-family: "Yeseva One", serif;
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center; /* Center navigation buttons */
+  gap: 40px; /* Space between buttons */
+  margin: 20px 0; /* Add spacing above and below */
 }
 
-h3, h4 {
-  text-align: center; /* Ensure all text is centered */
-  color: darkslategray;
-  font-size: 15px;
-  font-family: "Yeseva One", serif;
+nav a {
+  text-decoration: none;
+  color: darkblue;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-/* Custom p styles */
-p1, p2, p3, p4, p5, p6 {
-  text-align: center; /* Center all text */
+/* Page content wrapper */
+.page {
+  max-width: 80%; /* Prevent overly wide content */
+  margin: 20px auto; /* Center content horizontally with vertical spacing */
+  text-align: center; /* Center align text */
+}
+
+/* Fieldset spacing */
+fieldset {
+  margin-bottom: 20px; /* Space between sections */
+  padding: 10px; /* Add padding inside fieldsets */
+  border: 1px solid slateblue;
+}
+
+/* Styling for lists */
+ol {
+  list-style-type: decimal; /* Keep numbering */
+  padding-left: 20px; /* Indent lists */
+  font-size: 20px; /* Adjust font size for readability */
+}
+
+/* Gradient text for custom elements */
+p1, p2, p3 {
   background-image: linear-gradient(to right, blue, green, blue);
-  -webkit-background-clip: text; /* Webkit-based browsers */
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 40px;
-  font-family: 'Almendra SC';
+  font-size: 30px;
+  margin: 20px 0; /* Add spacing around these elements */
 }
 
-/* List styles */
-ol {
-  list-style-type: none; /* Removes numbering */
-  padding-left: 0; /* Removes default padding */
-  text-align: center; /* Center the list */
+/* Gradient text for p4, p5, p6 */
+p4, p5, p6 {
+  background-image: linear-gradient(to right, darkgreen, green, darkgreen);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  margin: 20px 0;
 }
 
-ol li {
-  margin-bottom: 10px; /* Add space between items */
+/* Buttons and other interactive elements */
+button {
+  margin: 10px;
 }
