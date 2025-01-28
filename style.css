@@ -81,7 +81,7 @@ nav {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  height: 20px; /* Full viewport height */
+  padding: 10px 0;
   text-align: center; /* Centers text inside */
 }
 /*onthoer not ot see changes */
@@ -94,6 +94,7 @@ nav a {
   cursor: pointer;
   text-align: center;
   vertical-align: center;
+  transition: background-color 0.3s ease;
 
 }
 /*mroe ghcen to see */
