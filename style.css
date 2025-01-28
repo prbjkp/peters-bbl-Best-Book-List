@@ -60,7 +60,7 @@ h5 {
   font-family: 'Almendra SC';
 }
 
-h6 {
+p6, h6 {
   background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
