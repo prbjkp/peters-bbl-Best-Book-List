@@ -3,11 +3,11 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column; /* Center horizontally */
-  justify-content: flex-start; /* Align content to the top */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
 }
-
 
 /* Background gradient */
 body {
@@ -16,89 +16,45 @@ body {
 
 /* Header styles */
 h1 {
-  text-align: center;
-  margin-top: 20px;
+  text-align: center; /* Ensure the title is centered */
+  margin-top: 20px; /* Add space at the top */
   color: maroon;
   font-size: 50px;
   font-family: "Yeseva One", serif;
-  margin-bottom: 20px; /* Add space below the title */
-}
-
-h2, h3, h4 {
-  font-family: "Yeseva One", serif;
-  text-align: center;
 }
 
 h2 {
+  text-align: center; /* Ensure subtitles are centered */
   color: slateblue;
   font-size: 22px;
-  text-align: center;
+  font-family: "Yeseva One", serif;
 }
 
 h3, h4 {
+  text-align: center; /* Ensure all text is centered */
   color: darkslategray;
   font-size: 15px;
-  text-align: center;
+  font-family: "Yeseva One", serif;
 }
 
-/* Styling for custom p tags with gradients */
+/* Custom p styles */
 p1, p2, p3, p4, p5, p6 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  text-align: center; /* Center all text */
+  background-image: linear-gradient(to right, blue, green, blue);
+  -webkit-background-clip: text; /* Webkit-based browsers */
   background-clip: text;
-  text-align: center;
-  color: transparent; /* Make the text transparent */
+  color: transparent;
   font-size: 40px;
   font-family: 'Almendra SC';
 }
 
-/* Special gradient for p4, p5, p6 */
-p4, p5, p6 {
-  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected gradient definition */
-  font-family: "Apace Mono", monospace;
-  margin-right: 40px;
-  text-align: center;
-  font-size: 20px;
-}
-
-/* Spacing and alignment adjustments for lists */
+/* List styles */
 ol {
-  list-style-type: none; /* Removes the default numbering */
-  padding-left: 0;
-  text-align: center;
-  font-size: 30px; /* Removes padding */
+  list-style-type: none; /* Removes numbering */
+  padding-left: 0; /* Removes default padding */
+  text-align: center; /* Center the list */
 }
 
 ol li {
-  margin-bottom: 10px;
-  text-align: center; /* Space between list items */
-}
-
-/* Styling for the nav element */
-nav {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  width: 60%; /* Adjust width as needed */
-  margin-top: 20px; /* Space above buttons */
-  margin-bottom: 20px;
-}
-
-nav a {
-  margin: 0 20px; /* Space between buttons */
-  text-decoration: none;
-  color: darkblue;
-  font-family: "Yeseva One", serif;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.page {
-  text-align: center; /* Center all content */
-  display: none; /* Hide all pages by default */
-}
-
-.page.active {
-  display: block; /* Show the active page */
+  margin-bottom: 10px; /* Add space between items */
 }
