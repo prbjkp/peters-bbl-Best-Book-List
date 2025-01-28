@@ -54,14 +54,14 @@ p4, p6, p5 {
 }
 
 h3 {
-  color: maroon;
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
   text-align: center;
-  color: transparent; /* Make the text transparent */
+  margin-top: 20px;
+  color: maroon;
   font-size: 40px;
-  font-family: 'Almendra SC';
+  font-family: "Yeseva One", serif;
+  margin-bottom: 20px; /* Add space below the title */
 }
+
 
 /* ng and alignment adjustments for lists */
 ol {
