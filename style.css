@@ -81,7 +81,7 @@ nav {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  height: 100vh; /* Full viewport height */
+  height: 20px; /* Full viewport height */
   text-align: center; /* Centers text inside */
 }
 /*onthoer not ot see changes */
