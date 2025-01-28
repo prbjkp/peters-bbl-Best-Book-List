@@ -87,7 +87,7 @@ nav {
 }
 
 nav a {
-  margin: 20px 20px; /* Space between buttons */
+  margin: 20 20px; /* Space between buttons */
   text-decoration: none;
   color: darkblue;
   font-family: "Yeseva One", serif;
