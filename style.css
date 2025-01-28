@@ -5,92 +5,47 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center the content */
   align-items: center; /* Horizontally center the content */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Background gradient */
 body {
   background-image: linear-gradient(to right, lightgreen, lightblue);
+  padding: 20px; /* Add some padding to prevent content from being flush against the edges */
 }
 
 /* Header styles */
 h1 {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px; /* Adjust spacing from the top of the page */
   color: maroon;
   font-size: 50px;
   font-family: "Yeseva One", serif;
   margin-bottom: 20px; /* Add space below the title */
 }
 
-h2, h3, h4 {
-  font-family: "Yeseva One", serif;
-}
-
-h2 {
-  color: slateblue;
-  font-size: 22px;
-}
-
-h3, h4 {
-  color: darkslategray;
-  font-size: 15px;
-}
-
-/* Styling for custom p tags with gradients */
-p1, p2, p3, p4, p5, p6 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  color: transparent; /* Make the text transparent */
-  font-size: 40px;
-  font-family: 'Almendra SC';
-}
-
-/* Special gradient for p4, p5, p6 */
-p4, p5, p6 {
-  background-image: linear-gradient(to right, darkgreen, green, green, darkgreen); /* Corrected gradient definition */
-  font-family: "Apace Mono", monospace;
-  margin-right: 40px;
-  font-size: 20px;
-}
-
-/* Spacing and alignment adjustments for lists */
-ol {
-  list-style-type: none; /* Removes the default numbering */
-  padding-left: 0;
-  font-size: 30px; /* Removes padding */
-}
-
-ol li {
-  margin-bottom: 10px; /* Space between list items */
-}
-
-/* Styling for the nav element */
 nav {
   display: flex;
-  justify-content: space-between;
-  width: 60%; /* Adjust width as needed */
-  margin-top: 20px; /* Space above buttons */
-  margin-bottom: 20px;
+  justify-content: center; /* Center the buttons */
+  gap: 40px; /* Space between the buttons */
+  width: 100%; /* Ensure the buttons align within the page width */
+  margin: 20px 0; /* Add spacing around the navigation */
 }
 
 nav a {
-  margin: 0 20px; /* Space between buttons */
   text-decoration: none;
   color: darkblue;
   font-family: "Yeseva One", serif;
   font-size: 20px;
   cursor: pointer;
-  text-align: center;
 }
 
 .page {
+  max-width: 80%; /* Prevent content from stretching too wide */
   text-align: center; /* Center all content */
-  display: none; /* Hide all pages by default */
 }
 
-.page.active {
-  display: block; /* Show the active page */
+fieldset {
+  margin-bottom: 20px; /* Add spacing between fieldsets */
 }
