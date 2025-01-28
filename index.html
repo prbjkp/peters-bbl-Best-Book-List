@@ -13,85 +13,94 @@
     <link href="style.css" rel="stylesheet" />
   </head>
 
-  <body> 
-    <h1 data-value="Peters Best Books List">Peters Best Books List</h1>
-    <nav>
-      <a id="home-link">Home</a>
-      <a id="newpage-link">New Page</a>
-    </nav>
+  <body>
+    <!-- Added a wrapper div to center everything properly -->
+    <div id="main-content">
+      <h1 data-value="Peters Best Books List">Peter's Best Books List</h1>
 
-    <!-- Home Page Content -->
-    <div id="home" class="page active">
-      <fieldset>
-        <h2><em>Preface:</em><br>
-          You should read these books <br>
-          I'm an expert, trust me <br>
-          <em>Qualifications:</em> I read
-        </h2>
-      </fieldset>
+      <!-- Navigation links -->
+      <nav>
+        <a id="home-link">Home</a>
+        <a id="newpage-link">New Page</a>
+      </nav>
 
-      <section>
+      <!-- Home Page Content -->
+      <div id="home" class="page active">
         <fieldset>
-          <p1>MY TOP 12 RECOMMENDED FANTASY BOOKS</p1>
-          <ol>
-            <li>Stormlight Archive - <em>Brandon Sanderson</em></li>
-            <li>Cradle - <em>Will Wight</em></li>
-            <li>Stormweaver - <em>Bryce O'Connor</em></li>
-            <li>House of Blades - <em>Will Wight</em></li>
-            <li>The Last Horizon - <em>Will Wight</em></li>
-            <li>Boul of Souls - <em>Trevor H. Cooley</em></li>
-            <li>Mistborn - <em>Brandon Sanderson</em></li>
-            <li>The Rithmatist - <em>Brandon Sanderson</em></li>
-            <li>Tress of the Emerald Sea - <em>Brandon Sanderson</em></li>
-            <li>The Reckoners - <em>Brandon Sanderson</em></li>
-            <li>Mage Errant - <em>John Bierce</em></li>
-            <li>The Saga of the Nothing Mage - <em>J.P. Valentine</em></li>
-          </ol>
+          <h2>
+            <em>Preface:</em><br />
+            You should read these books <br />
+            I'm an expert, trust me <br />
+            <em>Qualifications:</em> I read
+          </h2>
         </fieldset>
-        <br>
-        <fieldset>
-          <p2>MY TOP 6 NON-FANTASY RECOMMENDED BOOKS</p2>
-          <ol>
-            <li>Project Hail Mary - <em>Andy Weir</em></li>
-            <li>Hunger Games - <em>Suzanne Collins</em></li>
-            <li>Inheritance Games - <em>Jennifer Lynn Barnes</em></li>
-            <li>Legion - <em>Brandon Sanderson</em></li>
-            <li>Skyward - <em>Brandon Sanderson</em></li>
-            <li>Dune - <em>Frank Herbert</em></li>
-          </ol>
-        </fieldset>
-      </section>
+
+        <section>
+          <!-- Fantasy books list -->
+          <fieldset>
+            <p1>MY TOP 12 RECOMMENDED FANTASY BOOKS</p1>
+            <ol>
+              <li>Stormlight Archive - <em>Brandon Sanderson</em></li>
+              <li>Cradle - <em>Will Wight</em></li>
+              <li>Stormweaver - <em>Bryce O'Connor</em></li>
+              <li>House of Blades - <em>Will Wight</em></li>
+              <li>The Last Horizon - <em>Will Wight</em></li>
+              <li>Bowl of Souls - <em>Trevor H. Cooley</em></li>
+              <li>Mistborn - <em>Brandon Sanderson</em></li>
+              <li>The Rithmatist - <em>Brandon Sanderson</em></li>
+              <li>Tress of the Emerald Sea - <em>Brandon Sanderson</em></li>
+              <li>The Reckoners - <em>Brandon Sanderson</em></li>
+              <li>Mage Errant - <em>John Bierce</em></li>
+              <li>The Saga of the Nothing Mage - <em>J.P. Valentine</em></li>
+            </ol>
+          </fieldset>
+          <br />
+
+          <!-- Non-fantasy books list -->
+          <fieldset>
+            <p2>MY TOP 6 NON-FANTASY RECOMMENDED BOOKS</p2>
+            <ol>
+              <li>Project Hail Mary - <em>Andy Weir</em></li>
+              <li>Hunger Games - <em>Suzanne Collins</em></li>
+              <li>Inheritance Games - <em>Jennifer Lynn Barnes</em></li>
+              <li>Legion - <em>Brandon Sanderson</em></li>
+              <li>Skyward - <em>Brandon Sanderson</em></li>
+              <li>Dune - <em>Frank Herbert</em></li>
+            </ol>
+          </fieldset>
+        </section>
+      </div>
+
+      <!-- New Page Content -->
+      <div id="newpage" class="page">
+        <h2>Peter's P(f)hantastic Photos</h2>
+        <p>Some of my best photos</p>
+      </div>
     </div>
 
-    <!-- New Page Content -->
-    <div id="newpage" class="page">
-      <h2>Peter's P(f)hantastic Photos</h2>
-      <p>Some of my best photos</p>
-    </div>
-
+    <!-- JavaScript to handle navigation -->
     <script>
-      // JavaScript to handle navigation
-      document.getElementById('home-link').addEventListener('click', function () {
-        showPage('home');
+      document.getElementById("home-link").addEventListener("click", function () {
+        showPage("home");
       });
 
-      document.getElementById('newpage-link').addEventListener('click', function () {
-        showPage('newpage');
+      document.getElementById("newpage-link").addEventListener("click", function () {
+        showPage("newpage");
       });
 
       function showPage(pageId) {
         // Hide all pages
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => {
-          page.style.display = 'none';
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => {
+          page.style.display = "none";
         });
 
         // Show the selected page
-        document.getElementById(pageId).style.display = 'block';
+        document.getElementById(pageId).style.display = "block";
       }
 
       // Set initial page to be visible
-      showPage('home');
+      showPage("home");
     </script>
   </body>
 </html>
