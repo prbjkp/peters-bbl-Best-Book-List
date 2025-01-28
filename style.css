@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   color: slateblue;
-  font-size:5px;
+  font-size:15px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -53,7 +53,7 @@ p4, p6 {
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
 p3 {
-  color: rgb(26, 132, 230);
+  color: maroon;
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   text-align: center;
