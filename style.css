@@ -79,12 +79,10 @@ ol li {
 /* Styling for the nav element */
 nav {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 60%; /* Adjust width as needed */
-  margin-top: 20px; /* Space above buttons */
-  margin-bottom: 20px;
-  text-align: center;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Centers text inside */
 }
 /*onthoer not ot see changes */
 nav a {
