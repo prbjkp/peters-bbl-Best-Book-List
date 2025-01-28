@@ -41,7 +41,7 @@ h3, h4 {
 }
 
 /* Styling for custom p tags with gradients */
-p1, p2 {
+p1, p2, h6, p6 {
   background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
@@ -60,15 +60,6 @@ h5 {
   font-family: 'Almendra SC';
 }
 
-p6, h6 {
-  background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
-  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
-  background-clip: text;
-  text-align: center;
-  color: transparent; /* Make the text transparent */
-  font-size: 40px;
-  font-family: 'Almendra SC';
-}
 /* Spacing and alignment adjustments for lists */
 ol {
   list-style-type: none; /* Removes the default numbering */
