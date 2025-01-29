@@ -37,7 +37,7 @@ h2 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-p6, p7 {
+p6 {
   color: cadetblue;
   font-size:25px;
   text-align: center;
@@ -54,7 +54,7 @@ p1, p2 {
   font-size: 40px;
   font-family: 'Almendra SC';
 }
-p4, p5, p7 {
+p4, p5, p7, p9 {
   color: cadetblue;/* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
