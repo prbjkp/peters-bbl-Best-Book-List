@@ -54,7 +54,7 @@ p1, p2 {
   font-size: 40px;
   font-family: 'Almendra SC';
 }
-p4, p5 {
+p4, p5, p7 {
   color: cadetblue;/* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
@@ -81,7 +81,7 @@ ol {
   text-align: center;
   font-size: 30px; /* Removes padding */
 }
-ol1, ol2 {
+ol1, ol2, ol3 {
   list-style-type: none; /* Removes the default numbering */
   padding-left: 0;
   text-align: center;
