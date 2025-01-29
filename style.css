@@ -45,6 +45,7 @@ p1, p2 {
   background-clip: text;
   text-align: center;/* Make the text transparent */
   font-size: 40px;
+  font-display: transparent;
   font-family: 'Almendra SC';
 }
 p4, p5, p9{
