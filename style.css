@@ -43,18 +43,24 @@ p1, p2 {
   background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
-  text-align: center;
-  color: transparent; /* Make the text transparent */
+  text-align: center;/* Make the text transparent */
   font-size: 40px;
   font-family: 'Almendra SC';
 }
-p4, p5, p7, p9, p6 {
+p4, p5, p9{
   color: cadetblue;/* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
-  text-align: center;
-  color: transparent; /* Make the text transparent */
+  text-align: center; /* Make the text transparent */
   font-size: 40px;
+  font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+p7, p6 {
+  color: cadetblue;/* Corrected gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  text-align: center; /* Make the text transparent */
+  font-size: 25px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
 
