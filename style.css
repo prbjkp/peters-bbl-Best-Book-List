@@ -81,12 +81,19 @@ ol {
   text-align: center;
   font-size: 30px; /* Removes padding */
 }
-ol1, ol2, ol3 {
+ol1, ol2 {
   list-style-type: none; /* Removes the default numbering */
   padding-left: 0;
   text-align: center;
   font-size: 20px; /* Removes padding */
 }
+ol3 {
+  list-style-type: none; /* Removes the default numbering */
+  padding-left: 0;
+  text-align: center;
+  font-size: 20px; /* Removes padding */
+}
+
 
 ol li {
   margin-bottom: 10px;
