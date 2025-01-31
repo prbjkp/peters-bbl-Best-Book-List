@@ -15,11 +15,7 @@ body {
   background-image: linear-gradient(to right, lightgreen, lightblue);
 }
 
-p8 {
-  text-align: center;
-  font-size:40px;
-  font-family: 'Times New Roman', Times, serif;
-}
+
 /* Header styles */
 h1 {
   text-align: center;
@@ -36,7 +32,14 @@ h2 {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
-
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  color:rgb(3, 67, 120);
+  font-size: 40px;
+  font-family: "Yeseva One", serif;
+  margin-bottom: 20px; /* Add space below the title */
+}
 
 /* Styling for custom p tags with gradients */
 p1, p2 {
@@ -57,7 +60,7 @@ p4, p5, p9{
   font-size: 40px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
-p7, p6 {
+p6, p7 {
   color: cadetblue;/* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
@@ -65,15 +68,13 @@ p7, p6 {
   font-size: 25px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
-
-h3 {
+p8 {
   text-align: center;
-  margin-top: 20px;
-  color:rgb(3, 67, 120);
-  font-size: 40px;
-  font-family: "Yeseva One", serif;
-  margin-bottom: 20px; /* Add space below the title */
+  font-size:40px;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 
 /* ng and alignment adjustments for lists */
