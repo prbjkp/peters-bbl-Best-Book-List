@@ -51,6 +51,7 @@ p1, p2 {
   color: transparent;
   color: transparent;
   font-family: 'Almendra SC';
+  text-decoration: none;
 }
 p4, p5, p9{
   color: cadetblue;/* Corrected gradient definition */
