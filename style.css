@@ -83,6 +83,7 @@ ol {
   list-style-type: none; /* Removes the default numbering */
   padding-left: 0;
   text-align: center;
+  text-decoration: none;
   font-size: 30px; /* Removes padding */
 }
 ol1, ol2 {
