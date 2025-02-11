@@ -95,6 +95,10 @@ ol1, ol2 {
   font-size: 20px; /* Removes padding */
 }
 
+.small-image {
+  width: 50%; /* 50% of the parent container */
+  height: auto; /* Maintain aspect ratio */
+}
 
 
 ol li {
