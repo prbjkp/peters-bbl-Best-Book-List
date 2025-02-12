@@ -108,6 +108,12 @@ ol li {
   text-decoration-line: none !important;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full screen height */
+}
 /* Styling for the nav element */
 nav {
   display: flex;
