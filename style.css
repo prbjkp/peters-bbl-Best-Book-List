@@ -99,14 +99,11 @@ ol1, ol2 {
   width: 20%; /* 50% of the parent container */
   height: auto; /* Maintain aspect ratio */
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-ol li {
-  margin-bottom: 10px;
-  text-align: center; /* Space between list items */
-  text-decoration-line: none !important;
-}
 
 .center-container {
   display: flex;
@@ -115,6 +112,14 @@ ol li {
   height: 100vh; /* Full screen height */
 }
 /* Styling for the nav element */
+
+ol li {
+  margin-bottom: 10px;
+  text-align: center; /* Space between list items */
+  text-decoration-line: none !important;
+}
+
+
 nav {
   display: flex;
   justify-content: center; /* Centers horizontally */
