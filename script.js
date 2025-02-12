@@ -24,6 +24,7 @@ document.querySelector("p1").onmouseover = event => {
  
 }
    */
+  /*
 //replase the p2 with what ever the variable is in the index.html is. 
 document.querySelector("p2").onmouseover = event => {
   let iterations = 0;
@@ -63,3 +64,4 @@ document.querySelector(" ").onmouseover = event => {
     iterations += 1 / 1;
   }, 30);
 }
+*/
