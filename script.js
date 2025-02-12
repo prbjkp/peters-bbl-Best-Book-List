@@ -2,7 +2,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Corrected the letters string
 const numbers =
   "123456789";
 
-
+/*
 document.querySelector("p1").onmouseover = event => {
   let iterations = 0;
   const interval = setInterval(() => { // Corrected the placement of the opening parenthesis
@@ -21,7 +21,9 @@ document.querySelector("p1").onmouseover = event => {
 
     iterations += 1 / 1;
   }, 40);
+ 
 }
+   */
 //replase the p2 with what ever the variable is in the index.html is. 
 document.querySelector("p2").onmouseover = event => {
   let iterations = 0;
