@@ -95,22 +95,23 @@ ol1, ol2 {
   font-size: 20px; /* Removes padding */
 }
 
-.small-image {
-  width: 50%; /* Scale down image */
-  height: auto; /* Maintain aspect ratio */
-  
-  /* Centering horizontally */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* Position at the bottom */
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.bottom-bar {
+  position: fixed;  /* Stays at the bottom */
+  bottom: 0;        /* Aligns to bottom of screen */
+  left: 0;
+  width: 100%;      /* Full width */
+  background-color: rgba(0, 0, 0, 0.8); /* Optional background */
+  text-align: center; /* Center contents */
+  padding: 10px 0;  /* Add some space inside */
 }
 
+/* Ensure the image is centered inside the bottom bar */
+.small-image {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  display: inline-block; /* Prevents stretching */
+  vertical-align: middle; /* Aligns nicely with any text */
+}
 
 
 .center-container {
