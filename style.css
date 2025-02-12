@@ -96,7 +96,7 @@ ol1, ol2 {
 }
 
 .small-image {
-  width: 50%; /* 50% of the parent container */
+  width: 20%; /* 50% of the parent container */
   height: auto; /* Maintain aspect ratio */
   text-align: center;
 }
