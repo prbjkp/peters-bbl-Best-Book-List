@@ -188,6 +188,17 @@
           <br>
           <img src="leaf.JPG" alt="Its a leaf" style="max-width:25%;height:auto;">
       </div>
+      <div class="popup" onclick="myFunction()">Click me!
+        <span class="popuptext" id="myPopup">Wow it did a thing!</span>
+      </div>
+
+      <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
   
     <!---->
  <!--   <div class="bottom-bar" class="small-image"> -->

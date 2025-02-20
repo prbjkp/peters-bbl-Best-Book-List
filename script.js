@@ -2,6 +2,9 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Corrected the letters string
 const numbers =
   "123456789";
 
+
+  
+
 /*
 document.querySelector("p1").onmouseover = event => {
   let iterations = 0;
