@@ -210,25 +210,3 @@ nav a {
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-
-/* Style the navbar */
-#navbar {
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-}
-
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
