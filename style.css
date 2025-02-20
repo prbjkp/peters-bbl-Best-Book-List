@@ -187,7 +187,7 @@ nav a {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
+  text-align: center;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
