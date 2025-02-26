@@ -20,21 +20,26 @@
       <h1>Peter's Best Books List</h1>
 
       <!-- Navigation links -->
-     <nav id="desktopMenu">
-        <a id="home-link">The BBL</a>
-        <a id="newpage-link">About Me</a>
-        <a id="newerpage-link">Photography</a>
-     </nav>
+    <!-- Desktop Menu -->
+<nav id="desktopMenu">
+  <a id="home-link">The BBL</a>
+  <a id="newpage-link">About Me</a>
+  <a id="newerpage-link">Photography</a>
+</nav>
 
+<!-- Mobile Menu (Overlay) -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="mobile-link" data-page="home">The BBL</a>
+    <a class="mobile-link" data-page="newpage">About Me</a>
+    <a class="mobile-link" data-page="newerpage">Photography</a>
+  </div>
+</div>
 
-     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a id="home-link">The BBL</a>
-        <a id="newpage-link">About Me</a>
-        <a id="newerpage-link">Photography</a>
-      </div>
-    </div>
+<!-- Menu Button for Mobile -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
     
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
     
@@ -232,31 +237,43 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
-      document.getElementById("home-link").addEventListener("click", function () {
-        showPage("home");
-      });
+  document.getElementById("home-link").addEventListener("click", function () {
+  showPage("home");
+  closeNav(); // Close menu after clicking a link (for mobile)
+});
 
-      document.getElementById("newpage-link").addEventListener("click", function () {
-        showPage("newpage");
-      });
+document.getElementById("newpage-link").addEventListener("click", function () {
+  showPage("newpage");
+  closeNav();
+});
 
-      document.getElementById("newerpage-link").addEventListener("click", function () {
-        showPage("newerpage");
-      });
+document.getElementById("newerpage-link").addEventListener("click", function () {
+  showPage("newerpage");
+  closeNav();
+});
 
-      function showPage(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll(".page");
-        pages.forEach((page) => {
-          page.style.display = "none";
-        });
+function showPage(pageId) {
+  // Hide all pages
+  const pages = document.querySelectorAll(".page");
+  pages.forEach((page) => {
+    page.style.display = "none";
+  });
 
-        // Show the selected page
-        document.getElementById(pageId).style.display = "block";
-      }
+  // Show the selected page
+  document.getElementById(pageId).style.display = "block";
+}
 
-      // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
-      showPage("home");
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+
+// Set initial page to be visible
+showPage("home");
+
     </script>
      <script src="script.js"></script>
   </body>
