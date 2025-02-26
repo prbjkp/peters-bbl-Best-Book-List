@@ -12,6 +12,45 @@ const numbers =
     document.getElementById("myNav").style.height = "0%";
   }
   
+  document.addEventListener("DOMContentLoaded", function () {
+    // Desktop menu links
+    document.getElementById("home-link").addEventListener("click", function () {
+        navigateTo("index.html");
+    });
+    document.getElementById("newpage-link").addEventListener("click", function () {
+        navigateTo("about.html");
+    });
+    document.getElementById("newerpage-link").addEventListener("click", function () {
+        navigateTo("photography.html");
+    });
+
+    // Mobile menu links
+    const overlayLinks = document.querySelectorAll(".overlay-content a");
+    overlayLinks.forEach((link, index) => {
+        link.addEventListener("click", function () {
+            let pages = ["index.html", "about.html", "photography.html"];
+            navigateTo(pages[index]); 
+            closeNav(); // Close overlay after navigation
+        });
+    });
+});
+
+// Function to handle navigation
+function navigateTo(url) {
+    window.location.href = url;
+}
+
+// Function to open overlay
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+// Function to close overlay
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+
 /*
 document.querySelector("p1").onmouseover = event => {
   let iterations = 0;
