@@ -232,6 +232,26 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
+
+// open nav
+function openNav() {
+  const menu = document.getElementById("myNav");
+  menu.style.display = "block"; // Show first (needed for transition to work)
+  setTimeout(() => {
+    menu.classList.add("active"); // Start animation
+  }, 10);
+}
+
+function closeNav() {
+  const menu = document.getElementById("myNav");
+  menu.classList.remove("active"); // Start slide-out animation
+  setTimeout(() => {
+    menu.style.display = "none"; // Hide after animation
+  }, 300); // Match animation duration
+}
+
+// end of open nav section
+
     document.addEventListener("DOMContentLoaded", function () {
   // Function to show pages
   function showPage(pageId) {

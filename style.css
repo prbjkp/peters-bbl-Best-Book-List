@@ -296,18 +296,31 @@ nav a {
     cursor: pointer;
   }
 }
-/* Hide the mobile menu overlay by default */
+/* Hide the menu initially */
 #myNav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-y: hidden;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%); /* Start off-screen */
 }
 
-/* Default: Show desktop menu, hide mobile menu button */
-#desktopMenu {
-  display: flex;
+/* Show and slide up the menu */
+#myNav.active {
+  display: block;
+  transform: translateY(0); /* Slide into view */
 }
 
+@media screen and (max-width: 768px) {
+  #desktopMenu {
+    display: none; /* Hide desktop menu */
+  }
+/* Mobile menu button */
 #menuButton {
-  display: none; /* Ensure it's hidden by default */
-}
-
-/* When on mobile screens, show the mobile menu button and hide the desktop menu */
+  display: none;
+}}
