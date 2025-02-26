@@ -15,7 +15,7 @@ const numbers =
 /*
 document.querySelector("p1").onmouseover = event => {
   let iterations = 0;
-  const interval = setInterval(() => { // Corrected the placement of the opening parenthesis hehe he hea mroe to commit
+  const interval = setInterval(() => { // Corrected the placement of the opening parenthesis hehe he hea mroe to commit more so i can commit again 
     event.target.innerText = event.target.innerText.split("")
       .map((letter, index) => {
         if (index < iterations) {
