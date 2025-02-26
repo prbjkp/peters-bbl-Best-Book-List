@@ -232,49 +232,31 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
-      // Attach event listeners to all links with the same ID
-document.querySelectorAll("#home-link").forEach(link => {
-  link.addEventListener("click", function () {
-    showPage("home");
-    closeNav(); // Closes mobile menu when a mobile link is clicked
-  });
-});
+      document.getElementById("home-link").addEventListener("click", function () {
+        showPage("home");
+      });
 
-document.querySelectorAll("#newpage-link").forEach(link => {
-  link.addEventListener("click", function () {
-    showPage("newpage");
-    closeNav();
-  });
-});
+      document.getElementById("newpage-link").addEventListener("click", function () {
+        showPage("newpage");
+      });
 
-document.querySelectorAll("#newerpage-link").forEach(link => {
-  link.addEventListener("click", function () {
-    showPage("newerpage");
-    closeNav();
-  });
-});
+      document.getElementById("newerpage-link").addEventListener("click", function () {
+        showPage("newerpage");
+      });
 
-function showPage(pageId) {
-  // Hide all pages
-  document.querySelectorAll(".page").forEach(page => {
-    page.style.display = "none";
-  });
+      function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => {
+          page.style.display = "none";
+        });
 
-  // Show the selected page
-  document.getElementById(pageId).style.display = "block";
-}
+        // Show the selected page
+        document.getElementById(pageId).style.display = "block";
+      }
 
-function openNav() {
-  document.getElementById("myNav").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.display = "none";
-}
-
-// Set initial page to be visible
-showPage("home");
-
+      // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
+      showPage("home");
     </script>
      <script src="script.js"></script>
   </body>
