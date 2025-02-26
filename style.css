@@ -296,3 +296,14 @@ nav a {
     cursor: pointer;
   }
 }
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.visible {
+  max-height: 500px; /* Adjust to fit content */
+  transition: max-height 0.5s ease-in;
+}

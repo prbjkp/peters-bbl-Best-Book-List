@@ -15,6 +15,19 @@ const numbers =
     console.log("Open button clicked");
   });
 
+  document.getElementById("myButton").addEventListener("click", function () {
+    let content = document.getElementById("myContent");
+    
+    if (content.classList.contains("visible")) {
+        content.classList.remove("visible");
+        content.classList.add("hidden");
+    } else {
+        content.classList.remove("hidden");
+        content.classList.add("visible");
+    }
+});
+
+
 
 // Function to open the mobile men
 /*
