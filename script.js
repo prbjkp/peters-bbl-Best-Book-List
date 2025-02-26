@@ -12,10 +12,6 @@ const numbers =
     document.getElementById("myNav").style.height = "0%";
   }
   
-  document.querySelector("span").addEventListener("click", function() {
-    console.log("Open button clicked");
-  });
-
 /*
 document.querySelector("p1").onmouseover = event => {
   let iterations = 0;
