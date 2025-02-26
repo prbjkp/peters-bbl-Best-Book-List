@@ -3,15 +3,6 @@ const numbers =
   "123456789";
 
 
-
-  function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
-  
   document.addEventListener("DOMContentLoaded", function () {
     // Select all menu links from both desktop and mobile menus
     const links = document.querySelectorAll("#desktopMenu a, .overlay-content a");
@@ -23,7 +14,7 @@ const numbers =
             const pageId = this.getAttribute("id") || this.textContent.trim().toLowerCase().replace(/\s+/g, "");
 
             showPage(pageId);
-            closeNav(); // Close mobile menu after clicking (only applies to mobile)
+            closeNav(); // Close mobile menu after clicking
         });
     });
 
@@ -48,13 +39,15 @@ function showPage(pageId) {
 
 // Function to open the mobile menu
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%"; // Expand menu to full screen
 }
 
 // Function to close the mobile menu
 function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%"; // Collapse menu
 }
+
+
 
 // Function to open the mobile men
 /*

@@ -18,7 +18,6 @@
     <!-- Added a wrapper div to center everything properly he he more so i can cpommit again -->
     <div id="main-content">
       <h1>Peter's Best Books List</h1>
-
 <!-- Desktop Menu (Visible on large screens) -->
 <nav id="desktopMenu">
   <a id="home-link">The BBL</a>
@@ -27,15 +26,15 @@
 </nav>
 
 <!-- Mobile Menu Button -->
-<span onclick="openNav()">☰ Open Menu</span>
+<span class="mobile-menu-button" onclick="openNav()">☰ Open Menu</span>
 
 <!-- Mobile Overlay Menu (Hidden by default) -->
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">The BBL</a>
-    <a href="#">About Me</a>
-    <a href="#">Photography</a>
+    <a id="home-link">The BBL</a>
+    <a id="newpage-link">About Me</a>
+    <a id="newerpage-link">Photography</a>
   </div>
 </div>
 
