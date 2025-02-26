@@ -18,7 +18,7 @@ const numbers =
 
 // Function to open the mobile men
 /*
-document.querySelector("p1").onmouseover = event => {
+document.querySelector("p1").onmouseover = event => { mpore notes so i can commit again
   let iterations = 0;
   const interval = setInterval(() => { // Corrected the placement of the opening parenthesis hehe he hea mroe to commit more so i can commit again 
     event.target.innerText = event.target.innerText.split("")
