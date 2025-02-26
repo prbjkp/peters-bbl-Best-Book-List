@@ -309,12 +309,17 @@ nav a {
 }
 
 .hidden {
+  max-height: 0;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  visibility: hidden !important; 
+  overflow: hidden !important;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
 .visible {
-  opacity: 1;
-  visibility: visible;
+  max-height: 500px; /* Adjust this value to fit your content */
+  opacity: 1 !important;
+  visibility: visible !important;
+  overflow: visible !important;
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in, visibility 0.5s ease-in;
 }

@@ -15,17 +15,18 @@ const numbers =
     console.log("Open button clicked");
   });
 
-  document.getElementById("myButton").addEventListener("click", function () {
-    let content = document.getElementById("myContent");
+  document.getElementById("toggleButton").addEventListener("click", function () {
+    var content = document.getElementById("slidingContent");
 
-    if (content.classList.contains("visible")) {
-        content.classList.remove("visible");
-        content.classList.add("hidden");
-    } else {
+    if (content.classList.contains("hidden")) {
         content.classList.remove("hidden");
         content.classList.add("visible");
+    } else {
+        content.classList.remove("visible");
+        content.classList.add("hidden");
     }
 });
+
 
 
 
