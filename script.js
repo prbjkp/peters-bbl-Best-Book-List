@@ -16,12 +16,12 @@ const numbers =
     const content = document.getElementById("content");
 
     button.addEventListener("click", function() {
+        // Toggle visibility between .hidden and .visible
         if (content.classList.contains("visible")) {
             content.classList.remove("visible");
             content.classList.add("hidden");
         } else {
             content.classList.remove("hidden");
-            void content.offsetWidth; // Forces reflow to restart animation
             content.classList.add("visible");
         }
     });
