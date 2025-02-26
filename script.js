@@ -2,25 +2,40 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Corrected the letters string
 const numbers =
   "123456789";
 
+
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
   
-// Function to open the overlay navigation
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("toggleButton");
+    const content = document.getElementById("content");
+
+    button.addEventListener("click", function() {
+        // Toggle visibility between .hidden and .visible
+        if (content.classList.contains("visible")) {
+            content.classList.remove("visible");
+            content.classList.add("hidden");
+        } else {
+            content.classList.remove("hidden");
+            content.classList.add("visible");
+        }
+    });
+});
+
+let counter = 0;
+
+function resetCounter() {
+  counter = 0;
+  console.log('Counter reset');
 }
 
-// Function to close the overlay navigation
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+document.getElementById('resetButton').addEventListener('click', resetCounter);
 
-// Reset the navigation or perform other reset actions
-function resetNav() {
-  closeNav();  // Close the navigation overlay
-  console.log("Navigation has been reset!");
-}
-
-// Add event listener to the reset button
-document.getElementById('resetButton').addEventListener('click', resetNav);
 
 
 
