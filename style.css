@@ -296,3 +296,12 @@ nav a {
     cursor: pointer;
   }
 }
+
+#menu-button {
+  position: fixed;
+  z-index: 1000; /* Ensure it stays on top *//* Background color */
+  color: black; /* Text color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
