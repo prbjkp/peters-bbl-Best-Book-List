@@ -307,3 +307,14 @@ nav a {
   max-height: 500px; /* Adjust to fit content */
   transition: max-height 0.5s ease-in;
 }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}

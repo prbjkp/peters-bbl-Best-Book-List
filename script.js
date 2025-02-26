@@ -17,7 +17,7 @@ const numbers =
 
   document.getElementById("myButton").addEventListener("click", function () {
     let content = document.getElementById("myContent");
-    
+
     if (content.classList.contains("visible")) {
         content.classList.remove("visible");
         content.classList.add("hidden");
