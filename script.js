@@ -11,20 +11,20 @@ const numbers =
     document.getElementById("myNav").style.height = "0%";
   }
   
-  document.querySelector("span").addEventListener("click", function() {
-    console.log("Open button clicked");
-  });
+  document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("toggleButton");
+    const content = document.getElementById("content");
 
-  document.getElementById("toggleButton").addEventListener("click", function () {
-    var content = document.getElementById("slidingContent");
-
-    if (content.classList.contains("hidden")) {
-        content.classList.remove("hidden");
-        content.classList.add("visible");
-    } else {
-        content.classList.remove("visible");
-        content.classList.add("hidden");
-    }
+    button.addEventListener("click", function() {
+        if (content.classList.contains("visible")) {
+            content.classList.remove("visible");
+            content.classList.add("hidden");
+        } else {
+            content.classList.remove("hidden");
+            void content.offsetWidth; // Forces reflow to restart animation
+            content.classList.add("visible");
+        }
+    });
 });
 
 
