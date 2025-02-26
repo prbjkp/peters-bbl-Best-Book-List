@@ -296,12 +296,18 @@ nav a {
     cursor: pointer;
   }
 }
-
-#menu-button {
-  position: fixed;
-  z-index: 1000; /* Ensure it stays on top *//* Background color */
-  color: black; /* Text color */
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+/* Hide the mobile menu overlay by default */
+#myNav {
+  display: none;
 }
+
+/* Default: Show desktop menu, hide mobile menu button */
+#desktopMenu {
+  display: flex;
+}
+
+#menuButton {
+  display: none; /* Ensure it's hidden by default */
+}
+
+/* When on mobile screens, show the mobile menu button and hide the desktop menu */
