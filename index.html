@@ -232,61 +232,31 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-  // Function to show pages
-  function showPage(pageId) {
-    document.querySelectorAll(".page").forEach(page => {
-      page.style.display = "none";
-    });
+      document.getElementById("home-link").addEventListener("click", function () {
+        showPage("home");
+      });
 
-    document.getElementById(pageId).style.display = "block";
-  }
+      document.getElementById("newpage-link").addEventListener("click", function () {
+        showPage("newpage");
+      });
 
-  // Function to open mobile menu
-  function openNav() {
-    document.getElementById("myNav").style.display = "block";
-  }
+      document.getElementById("newerpage-link").addEventListener("click", function () {
+        showPage("newerpage");
+      });
 
-  // Function to close mobile menu
-  function closeNav() {
-    document.getElementById("myNav").style.display = "none";
-  }
+      function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => {
+          page.style.display = "none";
+        });
 
-  // Attach event listeners to all nav links (desktop & mobile)
-  document.querySelectorAll("#home-link").forEach(link => {
-    link.addEventListener("click", function () {
+        // Show the selected page
+        document.getElementById(pageId).style.display = "block";
+      }
+
+      // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
       showPage("home");
-      closeNav(); // Closes mobile menu if open
-    });
-  });
-
-  document.querySelectorAll("#newpage-link").forEach(link => {
-    link.addEventListener("click", function () {
-      showPage("newpage");
-      closeNav();
-    });
-  });
-
-  document.querySelectorAll("#newerpage-link").forEach(link => {
-    link.addEventListener("click", function () {
-      showPage("newerpage");
-      closeNav();
-    });
-  });
-
-  // Attach event listeners for opening and closing mobile menu
-  document.querySelectorAll("[onclick='openNav()']").forEach(button => {
-    button.addEventListener("click", openNav);
-  });
-
-  document.querySelectorAll("[onclick='closeNav()']").forEach(button => {
-    button.addEventListener("click", closeNav);
-  });
-
-  // Set initial page
-  showPage("home");
-});
-
     </script>
      <script src="script.js"></script>
   </body>
