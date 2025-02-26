@@ -270,3 +270,29 @@ nav a {
     display: none;
   }
 }
+
+/* Default: Show desktop menu, hide mobile menu */
+#desktopMenu {
+  display: flex; /* Show desktop menu */
+}
+
+#myNav, .openMenuButton {
+  display: none; /* Hide mobile menu */
+}
+
+/* When on small screens, show mobile menu and hide desktop menu */
+@media screen and (max-width: 768px) {
+  #desktopMenu {
+    display: none; /* Hide desktop menu on mobile */
+  }
+
+  #myNav {
+    display: block; /* Enable the mobile menu */
+  }
+
+  .openMenuButton {
+    display: block; /* Show the open menu button */
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
