@@ -28,6 +28,84 @@ function closeNav() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all menu links from both desktop and mobile menus
+  const links = document.querySelectorAll("#desktopMenu a, .overlay-content a");
+
+  links.forEach(link => {
+      link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default anchor behavior
+
+          const pageId = this.getAttribute("id") || this.textContent.trim().toLowerCase().replace(/\s+/g, "");
+
+          showPage(pageId);
+          closeNav(); // Close mobile menu after clicking
+      });
+  });
+
+  // Set initial page to be visible
+  showPage("home");
+});
+
+// Function to show the selected page
+function showPage(pageId) {
+  // Hide all pages
+  const pages = document.querySelectorAll(".page");
+  pages.forEach(page => {
+      page.style.display = "none";
+  });
+
+  // Show the selected page
+  const selectedPage = document.getElementById(pageId);
+  if (selectedPage) {
+      selectedPage.style.display = "block";
+  }
+}
+
+// Function to open the mobile menu
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+// Function to close the mobile menu
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all menu links from both desktop and mobile menus
+  const links = document.querySelectorAll("#desktopMenu a, .overlay-content a");
+
+  links.forEach(link => {
+      link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default anchor behavior
+
+          const pageId = this.getAttribute("id") || this.textContent.trim().toLowerCase().replace(/\s+/g, "");
+
+          showPage(pageId);
+          closeNav(); // Close mobile menu after clicking
+      });
+  });
+
+  // Set initial page to be visible
+  showPage("home");
+});
+
+// Function to show the selected page
+function showPage(pageId) {
+  // Hide all pages
+  const pages = document.querySelectorAll(".page");
+  pages.forEach(page => {
+      page.style.display = "none";
+  });
+
+  // Show the selected page
+  const selectedPage = document.getElementById(pageId);
+  if (selectedPage) {
+      selectedPage.style.display = "block";
+  }
+}
+
+// Function to open the mobile men
 /*
 document.querySelector("p1").onmouseover = event => {
   let iterations = 0;
