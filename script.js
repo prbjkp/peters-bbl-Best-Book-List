@@ -2,7 +2,15 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Corrected the letters string
 const numbers =
   "123456789";
 
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
 
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
 
 /*
 document.querySelector("p1").onmouseover = event => {
