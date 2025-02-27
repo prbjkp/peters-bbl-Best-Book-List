@@ -1,6 +1,5 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Corrected the letters string
-const numbers =
-  "123456789";
+const numbers = "123456789";
 
 
   function openNav() {
