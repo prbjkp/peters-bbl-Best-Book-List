@@ -201,17 +201,17 @@
           <p4>Images! Horray! </p4>
           <br>
           <style>
-            .parallax {
-              /* The image used */
-              background-image: url("lion.jpg");
-              min-height: 100%;
-              background-attachment: fixed;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: 100%;
-              min-width: 1000px;
-              max-width: none;
-            }
+         .parallax {
+   /* The image used */
+       background-image: url("lion.jpg");
+       height: 100vh; /* Make the element take the full viewport height */
+       background-attachment: fixed; /* Parallax effect */
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover; /* Ensure the image covers the entire element */
+       width: 100%; /* Ensure it spans the full width of the screen */
+}
+
             </style>
             <div class="parallax"></div>
             <fieldset>
