@@ -259,6 +259,16 @@
             // Handle navigation or other logic here
             if (event.target.id === "home-link") {
                 console.log("Navigating to Home");
+                function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => {
+          page.style.display = "none";
+        });
+
+        // Show the selected page
+        document.getElementById(pageId).style.display = "block";
+      }
             } else if (event.target.id === "newpage-link") {
                 console.log("Navigating to About Me");
             } else if (event.target.id === "newerpage-link") {
