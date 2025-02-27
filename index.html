@@ -224,45 +224,40 @@
       document.addEventListener("DOMContentLoaded", function () {
     console.log("✅ DOM fully loaded!");
 
-    document.getElementById("home-link").addEventListener("click", function (event) {
-        event.preventDefault();  // Prevent default link behavior
-        console.log("Clicked Home Link");
-        showPage("home");
-    });
+    const homeLink = document.getElementById("home-link");
+    const newPageLink = document.getElementById("newpage-link");
+    const newerPageLink = document.getElementById("newerpage-link");
 
-    document.getElementById("newpage-link").addEventListener("click", function (event) {
-        event.preventDefault();
-        console.log("Clicked About Me Link");
-        showPage("newpage");
-    });
-
-    document.getElementById("newerpage-link").addEventListener("click", function (event) {
-        event.preventDefault();
-        console.log("Clicked Photography Link");
-        showPage("newerpage");
-    });
-});
-
-
-console.log("✅ Script is running!");
-
-
-function showPage(pageId) {
-    console.log("➡️ Switching to page:", pageId);
-
-    document.querySelectorAll(".page").forEach(page => {
-        page.classList.remove("active");
-    });
-
-    const selectedPage = document.getElementById(pageId);
-    if (selectedPage) {
-        selectedPage.classList.add("active");
-        console.log("✅ Now showing:", selectedPage.id);
+    if (homeLink) {
+        homeLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            console.log("Clicked Home Link");
+            showPage("home");
+        });
     } else {
-        console.error("❌ Page ID not found:", pageId);
+        console.error("❌ home-link not found in the document!");
     }
-}
 
+    if (newPageLink) {
+        newPageLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            console.log("Clicked About Me Link");
+            showPage("newpage");
+        });
+    } else {
+        console.error("❌ newpage-link not found in the document!");
+    }
+
+    if (newerPageLink) {
+        newerPageLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            console.log("Clicked Photography Link");
+            showPage("newerpage");
+        });
+    } else {
+        console.error("❌ newerpage-link not found in the document!");
+    }
+});
 
 
       // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
