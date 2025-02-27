@@ -27,7 +27,6 @@
 
 
 
-
 // Function to open the mobile men
 /*
 document.querySelector("p1").onmouseover = event => { mpore notes so i can commit again
