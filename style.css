@@ -149,14 +149,14 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-/*mroe ghcen to see */
 .page {
   display: none; /* Hide all pages */
 }
 
 .page.active {
-  display: block !important; /* Show the selected page */
+  display: block; /* Show the selected page */
 }
+
 
 
 .popup {

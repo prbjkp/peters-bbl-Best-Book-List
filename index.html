@@ -221,41 +221,48 @@
     <script>
       console.log("✅ Script is running at full sprint");
 
-document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
+    console.log("✅ DOM fully loaded!");
+
     document.getElementById("home-link").addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent page refresh
+        event.preventDefault();  // Prevent default link behavior
+        console.log("Clicked Home Link");
         showPage("home");
     });
 
     document.getElementById("newpage-link").addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent page refresh
+        event.preventDefault();
+        console.log("Clicked About Me Link");
         showPage("newpage");
     });
 
     document.getElementById("newerpage-link").addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent page refresh
+        event.preventDefault();
+        console.log("Clicked Photography Link");
         showPage("newerpage");
     });
 });
+
 
 console.log("✅ Script is running!");
 
 
 function showPage(pageId) {
-    console.log("Attempting to show page:", pageId);
+    console.log("➡️ Switching to page:", pageId);
 
     document.querySelectorAll(".page").forEach(page => {
-        page.classList.remove("active"); // Remove active from all pages
+        page.classList.remove("active");
     });
 
     const selectedPage = document.getElementById(pageId);
     if (selectedPage) {
-        selectedPage.classList.add("active"); // Add active class to the selected page
-        console.log("Switched to page:", selectedPage.id);
+        selectedPage.classList.add("active");
+        console.log("✅ Now showing:", selectedPage.id);
     } else {
-        console.error("Page ID not found:", pageId);
+        console.error("❌ Page ID not found:", pageId);
     }
 }
+
 
 
       // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
