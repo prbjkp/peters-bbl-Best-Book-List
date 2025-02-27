@@ -331,7 +331,7 @@ nav a {
 }
 
 /* Hide the desktop menu on mobile screens */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .desktop-menu {
       display: none !important;
   }
@@ -341,7 +341,7 @@ nav a {
 }
 
 /* Hide the mobile menu on desktop screens */
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
   .desktop-menu {
       display: block !important;
   }
