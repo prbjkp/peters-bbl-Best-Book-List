@@ -206,15 +206,6 @@
                        <span class="popuptext" id="myPopup">Wow it did a thing!</span>
                        </div> -->
 
-     <script>//popup script - not needed
-        // When the user clicks on <div>, open the popup
-      //  function myFunction() {
-        //  var popup = document.getElementById("myPopup");
-       //   popup.classList.toggle("show");
-     //   }
-        </script>
-
-  <script src="script.js"></script>
 <!--note so i can commit changes agin-->
 
     <!-- JavaScript to handle navigation -->
@@ -282,24 +273,18 @@ function showPage(pageId) {
             // Handle navigation or other logic here
             if (event.target.id === "home-link") {
                 console.log("Navigating to Home");
-                document.getElementById("home-link").addEventListener("click", function (event) {
-        event.preventDefault();  // Prevent default link behavior
-        console.log("Clicked Home Link");
-        showPage("home");
-    });
             } 
             if (event.target.id === "newpage-link") {
                 console.log("Navigating to About Me");
             }
             if (event.target.id === "newerpage-link") {
-                console.log("Navigating to Photography");
-                
+                console.log("Navigating to Photography");               
             }
         }
     });
 });
 
-
+  
     </script>
   </body>
 </html>
