@@ -26,15 +26,16 @@
         <a id="newerpage-link">Photography</a>
      </nav>
 
-
-     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a id="home-link">The BBL</a>
-        <a id="newpage-link">About Me</a>
-        <a id="newerpage-link">Photography</a>
-      </div>
-    </div>
+     <div class="overlay-content">
+      <a id="home-link">The BBL</a>
+      <a id="newpage-link">About Me</a>
+      <a id="newerpage-link">Photography</a>
+  </div>
+  
+  <div id="home" class="page">Home Content</div>
+  <div id="newpage" class="page" style="display: none;">About Me Content</div>
+  <div id="newerpage" class="page" style="display: none;">Photography Content</div>
+  
     
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
     
@@ -219,54 +220,47 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
-      document.getElementById("home-link").addEventListener("click", function () {
-        showPage("home");
-      });
-
-      document.getElementById("newpage-link").addEventListener("click", function () {
-        showPage("newpage");
-      });
-
-      document.getElementById("newerpage-link").addEventListener("click", function () {
-        showPage("newerpage");
-        console.log("Navigating to Photography");
-      });
-
-      function showPage(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll(".page");
-        pages.forEach((page) => {
-          page.style.display = "none";
-        });
-
-        // Show the selected page
-        document.getElementById(pageId).style.display = "block";
-      }
-
-      // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
-      showPage("home");
-
-// here down is the div buttons
-
-      document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.querySelector(".overlay-content");
 
     overlay.addEventListener("click", function (event) {
         if (event.target.tagName === "A") {
-            console.log("Link clicked:", event.target.id);
-            event.preventDefault(); // Prevent default link behavior (optional)
-            
-            // Handle navigation or other logic here
-            if (event.target.id === "home-link") {
-                console.log("Navigating to Home");
-            } else if (event.target.id === "newpage-link") {
-                console.log("Navigating to About Me");
-            } else if (event.target.id === "newerpage-link") {
-                console.log("Navigating to Photography");
+            event.preventDefault(); // Prevent default link behavior
+
+            const pageId = getPageId(event.target.id);
+            if (pageId) {
+                showPage(pageId);
+                console.log(`Navigating to ${pageId}`);
             }
         }
     });
+
+    function getPageId(linkId) {
+        const pageMap = {
+            "home-link": "home",
+            "newpage-link": "newpage",
+            "newerpage-link": "newerpage"
+        };
+        return pageMap[linkId] || null;
+    }
+
+    function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll(".page").forEach(page => {
+            page.style.display = "none";
+        });
+
+        // Show the selected page
+        const selectedPage = document.getElementById(pageId);
+        if (selectedPage) {
+            selectedPage.style.display = "block";
+        }
+    }
+
+    // Set initial page to be visible
+    showPage("home");
 });
+
 
 
     </script>
