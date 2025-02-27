@@ -151,13 +151,13 @@ nav a {
 
 /*mroe ghcen to see */
 .page {
-  text-align: center; /* Center all content */
-  display: none; /* Hide all pages by default */
+  display: none; /* Hide all pages */
 }
 
 .page.active {
-  display: block; /* Show the active page */
+  display: block !important; /* Show the selected page */
 }
+
 
 .popup {
   position: relative;

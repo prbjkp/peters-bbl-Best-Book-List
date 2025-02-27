@@ -220,30 +220,40 @@
     <!-- JavaScript to handle navigation -->
     <script>
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("home-link").addEventListener("click", function () {
+    document.getElementById("home-link").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent page refresh
         showPage("home");
     });
 
-    document.getElementById("newpage-link").addEventListener("click", function () {
+    document.getElementById("newpage-link").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent page refresh
         showPage("newpage");
     });
 
-    document.getElementById("newerpage-link").addEventListener("click", function () {
+    document.getElementById("newerpage-link").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent page refresh
         showPage("newerpage");
     });
 });
 
 
-      function showPage(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll(".page");
-        pages.forEach((page) => {
-          page.style.display = "none";
-        });
 
-        // Show the selected page
-        document.getElementById(pageId).style.display = "block";
-      }
+function showPage(pageId) {
+    console.log("Attempting to show page:", pageId);
+
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active"); // Remove active from all pages
+    });
+
+    const selectedPage = document.getElementById(pageId);
+    if (selectedPage) {
+        selectedPage.classList.add("active"); // Add active class to the selected page
+        console.log("Switched to page:", selectedPage.id);
+    } else {
+        console.error("Page ID not found:", pageId);
+    }
+}
+
 
       // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
       showPage("home");

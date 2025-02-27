@@ -27,17 +27,6 @@ const numbers =
     });
 });
 
-let counter = 0;
-
-function resetCounter() {
-  counter = 0;
-  console.log('Counter reset');
-}
-
-document.getElementById('resetButton').addEventListener('click', resetCounter);
-
-
-
 
 // Function to open the mobile men
 /*
