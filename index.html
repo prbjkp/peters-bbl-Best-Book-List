@@ -252,7 +252,7 @@
     const overlay = document.querySelector(".overlay-content");
 
     overlay.addEventListener("click", function (event) {
-        if (event.target.tagName === "a") {
+        if (event.target.tagName === "A") {
             console.log("Link clicked:", event.target.id);
             event.preventDefault(); // Prevent default link behavior (optional)
             
