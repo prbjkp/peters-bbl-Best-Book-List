@@ -219,6 +219,8 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
+      console.log("✅ Script is running at full sprint");
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("home-link").addEventListener("click", function (event) {
         event.preventDefault(); // Prevent page refresh
@@ -263,6 +265,7 @@ function showPage(pageId) {
 
       document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.querySelector(".overlay-content");
+    console.log(" belive it or not Script is running!");
 
     overlay.addEventListener("click", function (event) {
         if (event.target.tagName === "A") {
