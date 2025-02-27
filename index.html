@@ -288,6 +288,11 @@ function showPage(pageId) {
             }
             if (event.target.id === "newerpage-link") {
                 console.log("Navigating to Photography");
+                document.getElementById("newerpage-link").addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log("Clicked Photography Link");
+        showPage("newerpage");
+    });
             }
         }
     });
