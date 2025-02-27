@@ -152,7 +152,7 @@ nav a {
 /*mroe ghcen to see */
 .page {
   text-align: center; /* Center all content */
-  display: none; /* Hide all pages by default */
+  display: none !important; /* Hide all pages by default */
 }
 
 .page.active {
