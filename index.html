@@ -214,49 +214,37 @@
         }
         </script>
 
-<script src="script.js"></script> <!-- Keep this if using an external JS file -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      // Get all navigation links (both in the nav and overlay menu)
-      const navLinks = document.querySelectorAll("#desktopMenu a, .overlay-content a");
+  <script src="script.js"></script>
+<!--note so i can commit changes agin-->
 
-      // Loop through each link and add event listeners
-      navLinks.forEach(link => {
-          link.addEventListener("click", function () {
-              const pageId = this.id.replace("-link", ""); // Convert ID to corresponding page name
-              showPage(pageId);
-          });
+    <!-- JavaScript to handle navigation -->
+    <script>
+      document.getElementById("home-link").addEventListener("click", function () {
+        showPage("home");
       });
 
-      // Function to show the selected page
+      document.getElementById("newpage-link").addEventListener("click", function () {
+        showPage("newpage");
+      });
+
+      document.getElementById("newerpage-link").addEventListener("click", function () {
+        showPage("newerpage");
+      });
+
       function showPage(pageId) {
-          // Hide all pages
-          document.querySelectorAll(".page").forEach(page => {
-              page.style.display = "none";
-          });
+        // Hide all pages
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => {
+          page.style.display = "none";
+        });
 
-          // Show the selected page
-          document.getElementById(pageId).style.display = "block";
-
-          // Close the overlay menu after selection
-          closeNav();
+        // Show the selected page
+        document.getElementById(pageId).style.display = "block";
       }
 
-      // Ensure the homepage is visible on load
+      // Set initial page to be visible he he more nmore notes so i can recommit the pageotes to commit it again and hope it works
       showPage("home");
-  });
-
-  // Function to open the overlay menu
-  function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-  }
-
-  // Function to close the overlay menu
-  function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-  }
-</script>
-
+    </script>
      <script src="script.js"></script>
   </body>
 </html>
