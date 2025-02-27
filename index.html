@@ -200,7 +200,26 @@
           <h3>Lets go new page</h3>
           <p4>Images! Horray! </p4>
           <br>
-          <img src="leaf.JPG" alt="Its a leaf" style="max-width:25%;height:auto;">
+          <style>
+            .parallax {
+              /* The image used */
+              background-image: url("lion.jpg");
+            
+              /* Set a specific height */
+              min-height: 500px;
+            
+              /* Create the parallax scrolling effect */
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            </style>
+            <div class="parallax"></div>
+            <fieldset>
+              <p4>Perhaps it worked <br>
+              I guess we will have to find out</p4>
+            </fieldset>
       </div>
 
 <!--note so i can commit changes agin-->
