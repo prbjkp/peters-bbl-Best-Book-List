@@ -271,18 +271,43 @@ function showPage(pageId) {
             if (event.target.id === "home-link") {
                 console.log("Navigating to Home");
                 showPage("home");
+                closeNav();
             } 
             if (event.target.id === "newpage-link") {
                 console.log("Navigating to About Me");
                 showPage("newpage");
+                closeNav();
             }
             if (event.target.id === "newerpage-link") {
                 console.log("Navigating to Photography");
-                showPage("newerpage");              
+                showPage("newerpage");
+                closeNav();  
             }
         }
     });
 });
+function closeNav() {
+    // Your code to close the navigation
+    console.log("Navigation is closed.");
+
+    // Create the <a> element dynamically
+    var closeButton = document.createElement("a");
+    closeButton.setAttribute("href", "javascript:void(0)");
+    closeButton.setAttribute("class", "closebtn");
+    closeButton.innerHTML = "&times;"; // The close symbol
+
+    // Add an event listener to the button that calls closeNav when clicked
+    closeButton.onclick = function() {
+        closeNav();
+    };
+
+    // Append the button to the desired location in the DOM (example: the body)
+    document.body.appendChild(closeButton);
+}
+
+// Call the closeNav function to demonstrate functionality
+closeNav();
+
 
   
     </script>
