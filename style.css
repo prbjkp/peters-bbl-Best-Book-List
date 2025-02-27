@@ -271,6 +271,14 @@ nav a {
   }
 }
 
+/* Hide the element on desktop screens */
+@media (min-width: 1024px) {
+  #menuButton {
+      display: none;
+  }
+}
+
+
 /* Default: Show desktop menu, hide mobile menu */
 #desktopMenu {
   display: flex; /* Show desktop menu */
