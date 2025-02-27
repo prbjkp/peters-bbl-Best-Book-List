@@ -219,18 +219,20 @@
 
     <!-- JavaScript to handle navigation -->
     <script>
-      document.getElementById("home-link").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("home-link").addEventListener("click", function () {
         showPage("home");
-      });
+    });
 
-      document.getElementById("newpage-link").addEventListener("click", function () {
+    document.getElementById("newpage-link").addEventListener("click", function () {
         showPage("newpage");
-      });
+    });
 
-      document.getElementById("newerpage-link").addEventListener("click", function () {
+    document.getElementById("newerpage-link").addEventListener("click", function () {
         showPage("newerpage");
-        console.log("Navigating to Photography");
-      });
+    });
+});
+
 
       function showPage(pageId) {
         // Hide all pages
