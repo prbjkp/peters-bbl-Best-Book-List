@@ -30,9 +30,9 @@
      <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
-        <a id="home-link">The BBL</a>
-        <a id="newpage-link">About Me</a>
-        <a id="newerpage-link">Photography</a>
+        <a id="h">The BBL</a>
+        <a id="a-link">About Me</a>
+        <a id="p-link">Photography</a>
       </div>
     </div>
     
@@ -257,17 +257,17 @@
             event.preventDefault(); // Prevent default link behavior (optional)
             
             // Handle navigation or other logic here
-            if (event.target.id === "home-link") {
+            if (event.target.id === "h-link") {
                 console.log("Navigating to Home");
             } 
 
 
-            if (event.target.id === "newpage-link") {
+            if (event.target.id === "a-link") {
                 console.log("Navigating to About Me");
             }
 
 
-            if (event.target.id === "newerpage-link") {
+            if (event.target.id === "p-link") {
                 console.log("Navigating to Photography");
             
                 function showPage(pageId) {
