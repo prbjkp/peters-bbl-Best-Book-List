@@ -264,6 +264,9 @@
 
             if (event.target.id === "a-link") {
                 console.log("Navigating to About Me");
+                document.getElementById("a-link").addEventListener("click", function () {
+        showPage("newpage");
+      });
             }
 
 
