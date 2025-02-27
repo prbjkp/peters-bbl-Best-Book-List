@@ -271,23 +271,14 @@ function showPage(pageId) {
             if (event.target.id === "home-link") {
                 console.log("Navigating to Home");
                 showPage("home");
-                function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
             } 
             if (event.target.id === "newpage-link") {
                 console.log("Navigating to About Me");
                 showPage("newpage");
-                function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
             }
             if (event.target.id === "newerpage-link") {
                 console.log("Navigating to Photography");
-                showPage("newerpage");  
-                function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }            
+                showPage("newerpage");              
             }
         }
     });
