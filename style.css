@@ -156,7 +156,7 @@ nav a {
 }
 
 .page.active {
-  display: block; /* Show the active page */
+  display: block !important; /* Show the active page */
 }
 
 .popup {
