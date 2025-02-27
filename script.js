@@ -25,6 +25,24 @@
     });
 });
 
+function showPage(pageId) {
+  console.log("➡️ Attempting to show page:", pageId);
+
+  const pages = document.querySelectorAll(".page");
+  pages.forEach(page => {
+      page.style.display = "none"; // Hide all pages
+  });
+
+  const selectedPage = document.getElementById(pageId);
+  if (selectedPage) {
+      selectedPage.style.display = "block"; // Show the selected page
+      console.log("✅ Now showing:", selectedPage.id);
+  } else {
+      console.error("❌ Page ID not found:", pageId);
+  }
+}
+
+
 
 // Function to open the mobile men
 /*
