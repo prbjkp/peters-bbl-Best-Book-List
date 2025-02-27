@@ -329,3 +329,23 @@ nav a {
   opacity: 1;
   transition: opacity 0.5s ease-in, visibility 0s; /* Immediately change visibility */
 }
+
+/* Hide the desktop menu on mobile screens */
+@media (max-width: 1024px) {
+  .desktop-menu {
+      display: none !important;
+  }
+  .mobile-menu {
+      display: block !important;
+  }
+}
+
+/* Hide the mobile menu on desktop screens */
+@media (min-width: 1025px) {
+  .desktop-menu {
+      display: block !important;
+  }
+  .mobile-menu {
+      display: none !important;
+  }
+}
