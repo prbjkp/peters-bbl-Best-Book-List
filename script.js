@@ -28,38 +28,39 @@
 
 //read more button for DSotM
 
-
 document.addEventListener("DOMContentLoaded", function() {
-    var extraText = document.getElementById("extra-text");
-    var readMoreBtn = document.getElementById("read-more-btn");
+  var extraText = document.getElementById("extra-text");
+  var readMoreBtn = document.getElementById("read-more-btn");
 
-    // Ensure correct display based on screen size
-    function checkScreenSize() {
-        if (window.innerWidth <= 768) {
-            readMoreBtn.style.display = "block"; // Show button on mobile
-            if (extraText.style.display !== "block") {
-                extraText.style.display = "none"; // Hide extra text initially on mobile
-            }
-        } else {
-            readMoreBtn.style.display = "none"; // Hide button on larger screens
-            extraText.style.display = "block";  // Ensure extra text is always visible on desktop
-        }
-    }
+  // Function to check screen size and adjust visibility
+  function checkScreenSize() {
+      if (window.innerWidth <= 768) {
+          readMoreBtn.style.display = "block"; // Show button on mobile
+          if (extraText.dataset.toggled !== "true") {
+              extraText.style.display = "none"; // Keep text hidden unless manually toggled
+          }
+      } else {
+          readMoreBtn.style.display = "none"; // Hide button on desktop
+          extraText.style.display = "block";  // Ensure text is visible on desktop
+      }
+  }
 
-    // Run function on page load and when window resizes
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
+  // Run function on page load and when window resizes
+  checkScreenSize();
+  window.addEventListener("resize", checkScreenSize);
 
-    // Toggle text visibility when button is clicked
-    readMoreBtn.addEventListener("click", function() {
-        if (extraText.style.display === "none" || extraText.style.display === "") {
-            extraText.style.display = "block"; // Show text
-            this.innerText = "Read Less"; // Change button text
-        } else {
-            extraText.style.display = "none"; // Hide text
-            this.innerText = "Read More"; // Change button text
-        }
-    });
+  // Toggle text visibility when button is clicked
+  readMoreBtn.addEventListener("click", function() {
+      if (extraText.style.display === "none" || extraText.style.display === "") {
+          extraText.style.display = "block"; // Show text
+          extraText.dataset.toggled = "true"; // Mark as manually toggled
+          this.innerText = "Read Less"; // Change button text
+      } else {
+          extraText.style.display = "none"; // Hide text
+          extraText.dataset.toggled = "false"; // Reset manual toggle
+          this.innerText = "Read More"; // Change button text
+      }
+  });
 });
 
 
