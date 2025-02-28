@@ -379,15 +379,16 @@ nav a {
 
 
 #extra-text {
-  display: none; /* Hide extra text by default */
+  display: none;
 }
 
+/* Hide the button on desktops, show only on small screens */
 #read-more-btn {
-  display: none; /* Hide button by default */
+  display: none; /* Default hidden */
   margin-top: 10px;
 }
 
-/* Show the button only on small screens */
+/* Show the button only on mobile screens */
 @media screen and (max-width: 768px) {
   #read-more-btn {
       display: inline-block;

@@ -26,16 +26,23 @@
 });
 
 
-document.getElementById("read-more-btn").addEventListener("click", function() {
+//read more button for DSotM
+
+document.addEventListener("DOMContentLoaded", function() {
     var extraText = document.getElementById("extra-text");
-    if (extraText.style.display === "none" || extraText.style.display === "") {
-        extraText.style.display = "block";
-        this.innerText = "Read Less"; // Change button text
-    } else {
-        extraText.style.display = "none";
-        this.innerText = "Read More"; // Change back
-    }
+    var readMoreBtn = document.getElementById("read-more-btn");
+
+    readMoreBtn.addEventListener("click", function() {
+        if (extraText.style.display === "none" || extraText.style.display === "") {
+            extraText.style.display = "block"; // Show text
+            this.innerText = "Read Less"; // Change button text
+        } else {
+            extraText.style.display = "none"; // Hide text
+            this.innerText = "Read More"; // Change button text
+        }
+    });
 });
+
 
 
 
