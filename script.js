@@ -78,4 +78,5 @@ document.addEventListener("DOMContentLoaded", function() {
           this.innerText = "Read More"; // Change button text
       }
   });
+  
 })});

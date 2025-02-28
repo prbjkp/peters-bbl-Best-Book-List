@@ -382,6 +382,11 @@ nav a {
   display: none;
 }
 
+
+#extra-text2 {
+  display: none;
+}
+
 /* Hide the button on desktops, show only on small screens */
 #read-more-btn {
   display: none; /* Default hidden */
