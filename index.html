@@ -221,15 +221,16 @@
 
 /* Image: Smaller on desktop */
 .responsive-img {
-  max-width: 25%; /* Reduce size (was 40%) */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 15%; /* Reduce size (was 40%) */
+  max-height: 15%; /* Maintain aspect ratio */
 }
 
 /* 📱 Mobile: Full width but still smaller */
 @media (max-width: 768px) {
   .responsive-img {
-    max-width: 60%; /* Smaller image on mobile */
-    margin-bottom: 10px; /* Space between image and text */
+    max-width: 25%; /* Smaller image on mobile */
+    margin-bottom: 10px;
+    max-height: 15%; /* Space between image and text */
   }
 }
 
