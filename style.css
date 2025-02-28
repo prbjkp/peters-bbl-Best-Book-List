@@ -373,3 +373,23 @@ nav a {
       display: none !important;
   }
 }
+
+
+
+
+
+#extra-text {
+  display: none; /* Hide extra text by default */
+}
+
+#read-more-btn {
+  display: none; /* Hide button by default */
+  margin-top: 10px;
+}
+
+/* Show the button only on small screens */
+@media screen and (max-width: 768px) {
+  #read-more-btn {
+      display: inline-block;
+  }
+}

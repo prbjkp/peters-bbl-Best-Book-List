@@ -24,6 +24,22 @@
         }
     });
 });
+
+
+document.getElementById("read-more-btn").addEventListener("click", function() {
+    var extraText = document.getElementById("extra-text");
+    if (extraText.style.display === "none" || extraText.style.display === "") {
+        extraText.style.display = "block";
+        this.innerText = "Read Less"; // Change button text
+    } else {
+        extraText.style.display = "none";
+        this.innerText = "Read More"; // Change back
+    }
+});
+
+
+
+
 // Function to open the mobile men
 /*
 document.querySelector("p1").onmouseover = event => { mpore notes so i can commit again
