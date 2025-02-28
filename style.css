@@ -98,7 +98,7 @@ p11{
   text-align: top, center; /* Make the text transparent */
   font-size: 15px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
-  word-wrap: normal;
+  text-wrap: right;
 }
 /*note note note horra */
 
