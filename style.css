@@ -44,7 +44,7 @@ h3 {
 h4 {
   color: lightgray;
   font-size:15px;
-  text-align: center;
+  text-align: center, top;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -82,7 +82,14 @@ p8 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-
+p10{
+  color: cadetblue;/* Corrected gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  text-align: top, center; /* Make the text transparent */
+  font-size: 25px;
+  font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
 /*note note note horra */
 
 /* ng and alignment adjustments for lists */
