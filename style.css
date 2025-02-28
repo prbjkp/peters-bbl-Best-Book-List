@@ -83,7 +83,7 @@ p8 {
 }
 
 p10{
-  color: cadetblue;/* Corrected gradient definition */
+  color: black;/* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   text-align: top, center; /* Make the text transparent */
