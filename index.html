@@ -208,45 +208,43 @@
           <style>
             /* Basic styles */
 /* Fieldset container */
+/* Fieldset container: Flexbox for side-by-side layout */
 .custom-container {
   display: flex;
-  align-items: center; /* Aligns items */
-  justify-content: space-between; /* Spaces elements */
+  align-items: center; /* Aligns text & image in a row */
+  justify-content: flex-start; /* Aligns items to the left */
   border: 2px solid black; /* Optional: Keeps fieldset visible */
   padding: 20px;
   max-width: 800px; /* Adjust width */
   margin: auto; /* Centers fieldset */
-  flex-wrap: wrap; /* Allows wrapping */
+  gap: 20px; /* Adds space between image & text */
 }
 
-/* Image: Smaller on desktop */
+/* Image: Smaller size */
 .responsive-img {
-  max-width: 15%; /* Reduce size (was 40%) */
-  max-height: 15%; /* Maintain aspect ratio */
+  max-width: 25%; /* Makes image smaller */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* 📱 Mobile: Full width but still smaller */
-@media (max-width: 768px) {
-  .responsive-img {
-    max-width: 15%; /* Smaller image on mobile */
-    margin-bottom: 10px;
-    max-height: 5%; /* Space between image and text */
-  }
-}
-
-/* Text */
+/* Text: Takes up remaining space */
 .text {
-  flex: 1; /* Makes text take up remaining space */
+  flex: 1; /* Allows text to fill available space */
   font-size: 1.2em;
   min-width: 200px;
 }
 
-  .responsive-img {
-    max-width: 15%; /* Image takes full width */
-    margin-bottom: 10px;
-    max-height: 15%; /* Space below image */
+/* 📱 Mobile: Image ABOVE text */
+@media (max-width: 768px) {
+  .custom-container {
+    flex-direction: column-reverse; /* Moves image above text */
+    text-align: center;
   }
 
+  .responsive-img {
+    max-width: 60%; /* Smaller image on mobile */
+    margin-bottom: 10px; /* Space below image */
+  }
+}
 
           </style>
 <!--note so i can commit changes agin-->
