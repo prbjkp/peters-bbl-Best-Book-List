@@ -28,10 +28,29 @@
 
 //read more button for DSotM
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var extraText = document.getElementById("extra-text");
     var readMoreBtn = document.getElementById("read-more-btn");
 
+    // Ensure correct display based on screen size
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            readMoreBtn.style.display = "block"; // Show button on mobile
+            if (extraText.style.display !== "block") {
+                extraText.style.display = "none"; // Hide extra text initially on mobile
+            }
+        } else {
+            readMoreBtn.style.display = "none"; // Hide button on larger screens
+            extraText.style.display = "block";  // Ensure extra text is always visible on desktop
+        }
+    }
+
+    // Run function on page load and when window resizes
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    // Toggle text visibility when button is clicked
     readMoreBtn.addEventListener("click", function() {
         if (extraText.style.display === "none" || extraText.style.display === "") {
             extraText.style.display = "block"; // Show text
@@ -42,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
 
 
 
