@@ -91,6 +91,15 @@ p10{
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
   word-wrap: normal;
 }
+p11{
+  color: darkgray;/* Corrected gradient definition */
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  text-align: top, center; /* Make the text transparent */
+  font-size: 15px;
+  font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+  word-wrap: normal;
+}
 /*note note note horra */
 
 /* ng and alignment adjustments for lists */
