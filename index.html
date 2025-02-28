@@ -201,9 +201,17 @@
           <br>
           <br>
           <fieldset>
-            <img src="leaf.JPG" alt="leaf">
-            
+            <img src="leaf.JPG" alt="leaf.JPG" class="responsive-img">
+
+
           </fieldset>
+          <style>
+            .responsive-img {
+  max-width: 100%; /* Ensures the image does not exceed its container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space caused by inline elements */
+}
+          </style>
 <!--note so i can commit changes agin-->
 
     <!-- JavaScript to handle navigation -->
