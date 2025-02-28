@@ -198,7 +198,7 @@
         <div id="newerpage" class="page">
           <h3>Music</h3>
           <p4>Welcome To my Music Opinions!</p4>
-          <fieldset class="container">
+          <fieldset class="flex-container">
           <img src="leaf.JPG" alt="Leaf" class="responsive-img">
           <div class="text">
             <p10>placeholder text to see how it works <br> he he he ha horray perhaps it will work</p10>
@@ -209,15 +209,14 @@
             /* Basic styles */
 /* Fieldset container */
 /* Fieldset container: Flexbox for side-by-side layout */
-.custom-container {
-  display: flex;
-  align-items: center; /* Aligns text & image in a row */
-  justify-content: flex-start; /* Aligns items to the left */
-  border: 2px solid black; /* Optional: Keeps fieldset visible */
-  padding: 20px;
-  max-width: 800px; /* Adjust width */
-  margin: auto; /* Centers fieldset */
-  gap: 20px; /* Adds space between image & text */
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Aligns image and text at the top */
+    gap: 15px; /* Adds space between the image and text */
+}
+
+.flex-container img {
+    width: 150px; /* Adjust as needed */
 }
 
 /* Image: Smaller size */
