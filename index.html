@@ -198,8 +198,54 @@
         <div id="newerpage" class="page">
           <h3>Music</h3>
           <p4>Welcome To my Music Opinions!</p4>
+          <fieldset class="container">
+          <img src="leaf.JPG" alt="Leaf" class="responsive-img">
+          <div class="text">
+            <p2>placeholder text to see how it works <br> he he he ha horray perhaps it will work</p2>
+          </fieldset>
 
-          
+          </div>
+          <style>
+            /* Basic styles */
+/* Fieldset container */
+.custom-container {
+  display: flex;
+  align-items: center; /* Aligns items */
+  justify-content: space-between; /* Spaces elements */
+  border: 2px solid black; /* Optional: Keeps fieldset visible */
+  padding: 20px;
+  max-width: 800px; /* Adjust width */
+  margin: auto; /* Centers fieldset */
+  flex-wrap: wrap; /* Allows wrapping */
+}
+
+/* Image */
+.responsive-img {
+  max-width: 40%; /* Image size on desktop */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Text */
+.text {
+  flex: 1; /* Makes text take up remaining space */
+  font-size: 1.2em;
+  min-width: 200px;
+}
+
+/* 📱 Mobile: Stack image ABOVE text */
+@media (max-width: 768px) {
+  .custom-container {
+    flex-direction: column-reverse; /* Puts text below image */
+    text-align: center;
+  }
+
+  .responsive-img {
+    max-width: 100%; /* Image takes full width */
+    margin-bottom: 10px; /* Space below image */
+  }
+}
+
+          </style>
 <!--note so i can commit changes agin-->
     <!-- JavaScript to handle navigation -->
     <script>
