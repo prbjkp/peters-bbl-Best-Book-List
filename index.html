@@ -200,7 +200,7 @@
           <p4>Welcome To my Book Reviews!</p4>
           <br>
           <br>
-          <fieldset>
+          <fieldset class="container">
             <img src="leaf.JPG" alt="leaf.JPG" class="responsive-img">
             <p class="text">This is some text next to the image.</p>
           </fieldset>
@@ -211,16 +211,18 @@
   height: auto; /* Maintains aspect ratio */
   display: block; /* Removes bottom space caused by inline elements */
 }
+
 .text {
-  margin-left: 10px; /* Adds spacing between image and text */
-  flex: 1; /* Allows text to fill remaining space */
+  margin-left: 15px; /* Adds spacing between the image and text */
+  flex: 1; /* Makes text take remaining space */
 }
 .container {
-  display: flex; /* Aligns items side by side */
-  align-items: center; /* Vertically aligns image and text */
-  border: 2px solid black; /* Optional: Keeps the fieldset visible */
-  padding: 10px; /* Adds spacing */
-  max-width: 600px; /* Optional: Adjusts width */
+  display: flex; /* Makes the elements appear in a row */
+  align-items: center; /* Aligns them vertically */
+  border: 2px solid black; /* Keeps the fieldset visible */
+  padding: 10px; /* Adds spacing inside the fieldset */
+  width: 100%; /* Makes sure it spans the full width */
+  max-width: 800px; /* Adjust as needed */
 }
           </style>
 <!--note so i can commit changes agin-->
