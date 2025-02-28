@@ -45,6 +45,23 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
+  document.addEventListener("DOMContentLoaded", function() {
+    var extraText = document.getElementById("extra-text2");
+    var readMoreBtn = document.getElementById("more2");
+  
+    // Function to check screen size and adjust visibility
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            readMoreBtn.style.display = "block"; // Show button on mobile
+            if (extraText.dataset.toggled !== "true") {
+                extraText.style.display = "none"; // Keep text hidden unless manually toggled
+            }
+        } else {
+            readMoreBtn.style.display = "none"; // Hide button on desktop
+            extraText.style.display = "block";  // Ensure text is visible on desktop
+        }
+    }
+
   // Run function on page load and when window resizes
   checkScreenSize();
   window.addEventListener("resize", checkScreenSize);
