@@ -41,6 +41,13 @@ h3 {
   margin-bottom: 20px; /* Add space below the title */
 }
 
+h4 {
+  color: lightgray;
+  font-size:15px;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
 /* Styling for custom p tags with gradients */
 p1, p2 {
   background-image: linear-gradient(to right, blue, green, blue); /* Corrected gradient definition */
