@@ -91,14 +91,14 @@ p10{
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
   word-wrap: normal;
 }
-p11{
+p{
   color: black;/* Corrected gradient definition */
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   text-align: top, center; /* Make the text transparent */
   font-size: 15px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
-  text-wrap: right;
+  text-wrap: left;
 }
 /*note note note horra */
 
