@@ -89,6 +89,9 @@ p10{
   text-align: top, center; /* Make the text transparent */
   font-size: 25px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+  word-wrap: break-word; /* Ensures long words break */
+  overflow-wrap: break-word; /* Extra support for text wrapping */
+  white-space: normal; /* Ensures text wraps naturally */
 }
 /*note note note horra */
 
