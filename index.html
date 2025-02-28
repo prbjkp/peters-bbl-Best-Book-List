@@ -219,10 +219,18 @@
   flex-wrap: wrap; /* Allows wrapping */
 }
 
-/* Image */
+/* Image: Smaller on desktop */
 .responsive-img {
-  max-width: 40%; /* Image size on desktop */
+  max-width: 25%; /* Reduce size (was 40%) */
   height: auto; /* Maintain aspect ratio */
+}
+
+/* 📱 Mobile: Full width but still smaller */
+@media (max-width: 768px) {
+  .responsive-img {
+    max-width: 60%; /* Smaller image on mobile */
+    margin-bottom: 10px; /* Space between image and text */
+  }
 }
 
 /* Text */
@@ -232,18 +240,11 @@
   min-width: 200px;
 }
 
-/* 📱 Mobile: Stack image ABOVE text */
-@media (max-width: 768px) {
-  .custom-container {
-    flex-direction: column-reverse; /* Puts text below image */
-    text-align: center;
-  }
-
   .responsive-img {
     max-width: 100%; /* Image takes full width */
     margin-bottom: 10px; /* Space below image */
   }
-}
+
 
           </style>
 <!--note so i can commit changes agin-->
