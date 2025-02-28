@@ -202,8 +202,7 @@
           <br>
           <fieldset>
             <img src="leaf.JPG" alt="leaf.JPG" class="responsive-img">
-
-
+            <p class="text">This is some text next to the image.</p>
           </fieldset>
           <style>
             .responsive-img {
@@ -211,6 +210,17 @@
   max-height: 25%; /* Ensures the image does not exceed its container */
   height: auto; /* Maintains aspect ratio */
   display: block; /* Removes bottom space caused by inline elements */
+}
+.text {
+  margin-left: 10px; /* Adds spacing between image and text */
+  flex: 1; /* Allows text to fill remaining space */
+}
+.container {
+  display: flex; /* Aligns items side by side */
+  align-items: center; /* Vertically aligns image and text */
+  border: 2px solid black; /* Optional: Keeps the fieldset visible */
+  padding: 10px; /* Adds spacing */
+  max-width: 600px; /* Optional: Adjusts width */
 }
           </style>
 <!--note so i can commit changes agin-->
