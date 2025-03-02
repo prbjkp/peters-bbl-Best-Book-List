@@ -390,10 +390,12 @@ nav a {
 #read-more-btn {
   display: none; /* Default hidden */
   margin-top: 10px;
+  text-align: center;
 }
 #more2 {
   display: none; /* Default hidden */
   margin-top: 10px;
+  text-align: center;
 }
 
 /* Show the button only on mobile screens */
