@@ -309,7 +309,7 @@ nav a {
 }
 
 #myNav, .openMenuButton {
-  display: none; /* Hide mobile menu */
+  display: block; /* Hide mobile menu */
 }
 
 /* When on small screens, show mobile menu and hide desktop menu */
@@ -390,24 +390,27 @@ nav a {
 #read-more-btn {
   display: none; /* Default hidden */
   margin-top: 10px;
-  text-align: center;
 }
+
+/* Ensure #more2 is also hidden by default */
 #more2 {
-  display: none; /* Default hidden */
+  display: none;
   margin-top: 10px;
-  text-align: center;
 }
 
-/* Show the button only on mobile screens */
+/* Show and center the button only on mobile screens */
 @media screen and (max-width: 768px) {
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    width: 100%; /* Ensures it spans full width */
+  }
+
   #read-more-btn {
-      display: inline-block;
+    display: inline-block; /* Make button visible */
   }
-}
 
-@media screen and (max-width: 768px) {
   #more2 {
-      display: inline-block;
+    display: inline-block;
   }
 }
-
