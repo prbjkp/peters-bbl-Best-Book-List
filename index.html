@@ -198,10 +198,10 @@
         <div id="newerpage" class="page">
           <h3>Music</h3>
           <p4>Welcome To my Music Opinions!</p4>
-          <fieldset>
+          <fieldset class="flex-container">
             <img src="moon.png" alt="Dark Side of the Moon" class="responsive-img moon-img">
             <div class="text">
-                <p10><strong>Dark Side of the Moon - <em>Pink Floyd</em></strong></p10> 
+                <p><strong>Dark Side of the Moon - <em>Pink Floyd</em></strong></p>
                 <p>Dark Side of the Moon was one of the first Pink Floyd albums I was introduced to,
                     after Division Bell, and it is also one of the most popular Pink Floyd albums to date, for a good reason.  
                 </p>
@@ -209,12 +209,7 @@
                     <p>Dark Side of the Moon contains 9 songs that blend together so perfectly it can be difficult to 
                         tell when a new song is playing. The psychedelic rock style adds sounds that you normally don't hear in songs 
                         like a cash register opening or clocks chiming, along with electrical sound effects. 
-                        The album goes into themes of death, mental illness, greed, and conflict. “The bassist, Roger Waters, 
-                        proposed that a new album could form part of the tour. Waters conceived an album that dealt with things that 
-                        "make people mad", focusing on the pressures associated with the band's arduous lifestyle, and dealing with 
-                        the mental health problems suffered by the former band member Syd Barrett.” (Wikipedia)
-                        This album is a roller coaster in the ways it changes artistic styles smoothly from saxophone solos to solo vocals 
-                        without words, jumping from topic to topic smoothly. 
+                        The album goes into themes of death, mental illness, greed, and conflict. 
                         <br>Overall Rating: 10/10 Absolutely recommended<br>
                     </p>
                 </span>
@@ -226,26 +221,20 @@
         
         <fieldset class="flex-container">
             <img src="TPAB.png" alt="To Pimp a Butterfly" class="responsive-img tpab-img">
-            <div class="text"><br>
-                <p10><strong>To Pimp a Butterfly - <em>Kendrick Lamar</em></strong></p10> 
+            <div class="text">
+                <p><strong>To Pimp a Butterfly - <em>Kendrick Lamar</em></strong></p>
                 <p>tpab review goes here </p>
                 <span id="extra-text2">
-                    <p>As of February 2025, the global economy shows resilience but faces various challenges. The Organisation for Economic 
-                        Co-operation and Development (OECD) has projected stable growth in 2025 and 2026, despite ongoing risks. Similarly, 
-                        the International Monetary Fund (IMF) forecasts global growth at 3.3% for both years, with an upward revision in 
-                        the United States offsetting downward revisions in other regions. The United States, however, is grappling with 
-                        "mini-stagflation," a combination of persistent inflation and stagnant growth. The U.S. market has experienced 
-                        volatility, especially in the technology sector, with companies like Nvidia facing difficulties. Meanwhile, China’s 
-                        government is planning to boost consumption and overall growth with a projected growth target around 5%. In Europe, 
-                        the European Central Bank is expected to reduce interest rates, though future policy decisions remain uncertain, 
-                        and the U.S. has imposed tariffs on European imports, which could impact the region’s economies.
-        
-                         <br>Overall Rating: 10/10 Absolutely recommended<br>
+                    <p>As of February 2025, the global economy shows resilience but faces various challenges. 
+                        The Organisation for Economic Co-operation and Development (OECD) has projected stable growth in 2025 and 2026, 
+                        despite ongoing risks. Similarly, the International Monetary Fund (IMF) forecasts global growth at 3.3% for both years.
+                        <br>Overall Rating: 10/10 Absolutely recommended<br>
                     </p>
                 </span>
                 <button id="more2">Read More</button>
             </div>
         </fieldset>
+        
         
   
             </div>
@@ -271,41 +260,31 @@
   min-height: auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
 }
-
+/* Ensure both fieldsets use flexbox for side-by-side layout */
 .flex-container {
     display: flex;
-    align-items: flex-start; /* Aligns image and text at the top */
-    gap: 15px; /* Adds space between the image and text */
+    align-items: flex-start; /* Aligns image and text */
+    gap: 15px; /* Space between image and text */
 }
 
-.flex-container img {
-    width: 150px; /* Adjust as needed */
-}
 
-/* Image: Smaller size */
-.responsive-img {
-  max-width: 25%; /* Makes image smaller */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Text: Takes up remaining space */
+/* Text section should take remaining space */
 .text {
-  flex: 1; /* Allows text to fill available space */
-  font-size: 1.2em;
-  min-width: 200px;
+    flex: 1;
+    font-size: 1.2em;
 }
 
-/* 📱 Mobile: Image ABOVE text */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .custom-container {
-    flex-direction: column-reverse; /* Moves image above text */
-    text-align: center;
-  }
+    .flex-container {
+        flex-direction: column; /* Stack image above text */
+        text-align: center;
+    }
 
-  .responsive-img {
-    max-width: 60%; /* Smaller image on mobile */
-    margin-bottom: 10px; /* Space below image */
-  }
+    .moon-img, .tpab-img {
+        max-width: 60%; /* Bigger on small screens */
+        margin: 0 auto; /* Center align */
+    }
 }
 
           </style>
