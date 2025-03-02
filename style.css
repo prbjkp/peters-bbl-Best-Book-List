@@ -96,7 +96,7 @@ p{
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
   text-align: top, center; /* Make the text transparent */
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Times New Roman', 'Times New Roman', Times, serif;
   text-wrap: left;
 }
