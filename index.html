@@ -199,18 +199,23 @@
           <h3>Music</h3>
           <p4>Welcome To my Music Opinions!</p4>
           <fieldset class="flex-container">
-            <img src="moon.png" alt="Dark Side of the Moon" class="moon-img">
-            <div class="text"  id="container id="floated">
+            <div cass="wrap">
+            <img src="moon.png" alt="Dark Side of the Moon" class="moon-img" style="float: left; 
+  margin: 5px;">
+  </div>
+            <div class="text">
                 <p><strong>Dark Side of the Moon - <em>Pink Floyd</em></strong></p>
                 <p>Dark Side of the Moon was one of the first Pink Floyd albums I was introduced to,
                     after Division Bell, and it is also one of the most popular Pink Floyd albums to date, for a good reason.  
                 </p>
                 <span id="extra-text">
+                <div>
                     <p>Dark Side of the Moon contains 9 songs that blend together so perfectly it can be difficult to 
                         tell when a new song is playing. The psychedelic rock style adds sounds that you normally don't hear in songs 
                         like a cash register opening or clocks chiming, along with electrical sound effects. 
                         The album goes into themes of death, mental illness, greed, and conflict. 
                         <br>Overall Rating: 10/10 Absolutely recommended<br>
+                      </div>
                     </p>
                 </span>
                 <button id="read-more-btn">Read More</button>
@@ -244,6 +249,10 @@
             /* Basic styles */
 /* Fieldset container */
 /* Fieldset container: Flexbox for side-by-side layout */
+.wrap {
+   float: left; 
+   margin: 5px;
+  }
 
 .moon-img {
   max-width: 20px; /* Makes the image responsive */
@@ -252,16 +261,6 @@
   border-radius: 2px; /* Adds rounded corners */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
   float: left;
-}
-
-#container{
-    width: 400px;
-    background: yellow;
-}
-#floated{
-    float: left;
-    width: 150px;
-    background: red;
 }
 
 .tpab-img {
