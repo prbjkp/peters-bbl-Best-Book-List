@@ -245,37 +245,29 @@
 /* Fieldset container */
 /* Fieldset container: Flexbox for side-by-side layout */
 
-.moon-img {
-  max-width: 20px; /* Makes the image responsive */
-  min-width: 50%;
-  height: auto;
-  border-radius: 2px; /* Adds rounded corners */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
-
-}
-
-.tpab-img {
-  max-width: 20px; /* Makes the image responsive */
-  height: auto;
-  border-radius: 2px; /* Adds rounded corners */
-  min-width: 50%;
-  min-height: auto;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
-
-}
-/* Ensure both fieldsets use flexbox for side-by-side layout */
+/* Ensure both fieldsets stack content vertically */
 .flex-container {
     display: flex;
-    align-items: flex-start; /* Aligns image and text */
-    gap: 15px; /* Space between image and text */
+    flex-direction: column; /* Stack image on top of text */
+    align-items: center; /* Center content */
+    text-align: center; /* Ensure text aligns properly */
+    gap: 10px; /* Reduce space for better flow */
 }
 
+/* Ensure images are centered and responsive */
+.moon-img, .tpab-img {
+    max-width: 50%; /* Adjusts width for responsiveness */
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
 
-/* Text section should take remaining space */
+/* Ensure text takes full width */
 .text {
-    flex: 1;
+    width: 100%; /* Make text span full width */
     font-size: 1.2em;
 }
+
 
 /* Responsive adjustments */
 /* @media (max-width: 768px) {
