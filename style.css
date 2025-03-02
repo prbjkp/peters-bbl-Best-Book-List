@@ -381,6 +381,9 @@ nav a {
 #extra-text {
   display: none;
 }
+#extra-text2 {
+  display: none;
+}
 
 
 /* Hide the button on desktops, show only on small screens */
@@ -388,10 +391,20 @@ nav a {
   display: none; /* Default hidden */
   margin-top: 10px;
 }
+#more2 {
+  display: none; /* Default hidden */
+  margin-top: 10px;
+}
 
 /* Show the button only on mobile screens */
 @media screen and (max-width: 768px) {
   #read-more-btn {
+      display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #more2 {
       display: inline-block;
   }
 }
