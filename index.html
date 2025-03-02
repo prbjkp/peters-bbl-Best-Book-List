@@ -199,7 +199,7 @@
           <h3>Music</h3>
           <p4>Welcome To my Music Opinions!</p4>
           <fieldset class="flex-container">
-            <img src="moon.png" alt="Dark Side of the Moon" class="responsive-img moon-img">
+            <img src="moon.png" alt="Dark Side of the Moon" class="moon-img">
             <div class="text">
                 <p><strong>Dark Side of the Moon - <em>Pink Floyd</em></strong></p>
                 <p>Dark Side of the Moon was one of the first Pink Floyd albums I was introduced to,
@@ -220,7 +220,7 @@
         <br>
         
         <fieldset class="flex-container">
-            <img src="TPAB.png" alt="To Pimp a Butterfly" class="responsive-img tpab-img">
+            <img src="TPAB.png" alt="To Pimp a Butterfly" class="tpab-img">
             <div class="text">
                 <p><strong>To Pimp a Butterfly - <em>Kendrick Lamar</em></strong></p>
                 <p>tpab review goes here </p>
@@ -247,6 +247,7 @@
 
 .moon-img {
   max-width: 20px; /* Makes the image responsive */
+  min-width: 50%;
   height: auto;
   border-radius: 2px; /* Adds rounded corners */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
@@ -275,18 +276,12 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .flex-container {
         flex-direction: column; /* Stack image above text */
-        text-align: center;
+       /* text-align: center;
     }
-
-    .moon-img, .tpab-img {
-        max-width: 60%; /* Bigger on small screens */
-        margin: 0 auto; /* Center align */
-    }
-}
-
+  }
           </style>
 <!--note so i can commit changes agin-->
     <!-- JavaScript to handle navigation -->
