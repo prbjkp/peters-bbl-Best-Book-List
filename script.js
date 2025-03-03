@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var extraText2 = document.getElementById("extra-text2");
   var readMoreBtn2 = document.getElementById("more2");
 
-  var extraText2 = document.getElementById("extra-text3");
-  var readMoreBtn2 = document.getElementById("more3");
+  var extraText3 = document.getElementById("extra-text3");
+  var readMoreBtn3 = document.getElementById("more3");
 
   // Function to check screen size and adjust visibility
   function checkScreenSize() {
