@@ -384,7 +384,9 @@ nav a {
 #extra-text2 {
   display: none;
 }
-
+#extra-text3 {
+  display: none;
+}
 
 /* Hide the button on desktops, show only on small screens */
 #read-more-btn {
