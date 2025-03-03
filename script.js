@@ -37,9 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var extraText2 = document.getElementById("extra-text2");
   var readMoreBtn2 = document.getElementById("more2");
 
-  var extraText3 = document.getElementById("text3");
-  var readMoreBtn3 = document.getElementById("extra3");
-
+ var extraText3 = document.getElementById("text3");
+var readMoreBtn3 = document.getElementById("extraText3")
   // Function to check screen size and adjust visibility
   function checkScreenSize() {
       if (window.innerWidth <= 768) {
@@ -88,6 +87,18 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
+  readMoreBtn3.addEventListener("click", function() {
+    if (extraText3.style.display === "none" || extraText3.style.display === "") {
+        extraText3.style.display = "block";
+        extraText3.dataset.toggled = "true";
+        this.innerText = "Read Less";
+    } else {
+        extraText3.style.display = "none";
+        extraText3.dataset.toggled = "false";
+        this.innerText = "Read More";
+    }
+});
+
   // Toggle text visibility when button 2 is clicked
   readMoreBtn2.addEventListener("click", function() {
       if (extraText2.style.display === "none" || extraText2.style.display === "") {
@@ -100,16 +111,4 @@ document.addEventListener("DOMContentLoaded", function() {
           this.innerText = "Read More";
       }
   });
-});
-
-readMoreBtn3.addEventListener("click", function() {
-    if (extraText3.style.display === "none" || extraText3.style.display === "") {
-        extraText3.style.display = "block";
-        extraText3.dataset.toggled = "true";
-        this.innerText = "Read Less";
-    } else {
-        extraText3.style.display = "none";
-        extraText3.dataset.toggled = "false";
-        this.innerText = "Read More";
-    }
 });
