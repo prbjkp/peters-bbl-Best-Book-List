@@ -33,9 +33,12 @@ document.addEventListener("DOMContentLoaded", function() {
   var extraText1 = document.getElementById("extra-text");
   var readMoreBtn1 = document.getElementById("read-more-btn");
 
-  // Second extra text and button
+  
   var extraText2 = document.getElementById("extra-text2");
   var readMoreBtn2 = document.getElementById("more2");
+
+  var extraText2 = document.getElementById("extra-text3");
+  var readMoreBtn2 = document.getElementById("more3");
 
   // Function to check screen size and adjust visibility
   function checkScreenSize() {
@@ -50,6 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
           if (extraText2.dataset.toggled !== "true") {
               extraText2.style.display = "none";
           }
+
+          readMoreBtn3.style.display = "block";
+          if (extraText3.dataset.toggled !== "true") {
+              extraText3.style.display = "none";
+          }
       } else {
           // Hide buttons on desktop and show text
           readMoreBtn1.style.display = "none";
@@ -57,6 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
           
           readMoreBtn2.style.display = "none";
           extraText2.style.display = "block";
+
+          readMoreBtn3.style.display = "none";
+          extraText3.style.display = "block";
       }
   }
 
@@ -89,4 +100,16 @@ document.addEventListener("DOMContentLoaded", function() {
           this.innerText = "Read More";
       }
   });
+});
+
+readMoreBtn3.addEventListener("click", function() {
+    if (extraText3.style.display === "none" || extraText3.style.display === "") {
+        extraText3.style.display = "block";
+        extraText3.dataset.toggled = "true";
+        this.innerText = "Read Less";
+    } else {
+        extraText3.style.display = "none";
+        extraText3.dataset.toggled = "false";
+        this.innerText = "Read More";
+    }
 });

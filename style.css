@@ -415,6 +415,11 @@ nav a {
   }
 }
 
+#more3 {
+  display: inline-block;
+}
+
+
 .centered {
  text-align: center !important;
  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
