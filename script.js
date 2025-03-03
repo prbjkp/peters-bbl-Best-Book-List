@@ -38,7 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
   var readMoreBtn2 = document.getElementById("more2");
 
  var extraText3 = document.getElementById("text3");
-var readMoreBtn3 = document.getElementById("extraText3")
+ var readMoreBtn3 = document.getElementById("extraText3")
+
+ var extraText4 = document.getElementById("text4");
+ var readMoreBtn4 = document.getElementById("extraText4")
   // Function to check screen size and adjust visibility
   function checkScreenSize() {
       if (window.innerWidth <= 768) {
@@ -53,6 +56,12 @@ var readMoreBtn3 = document.getElementById("extraText3")
               extraText2.style.display = "none";
           }
 
+          readMoreBtn4.style.display = "block";
+          if (extraText4.dataset.toggled !== "true") {
+              extraText4.style.display = "none";
+          }
+
+          
           readMoreBtn3.style.display = "block";
           if (extraText3.dataset.toggled !== "true") {
               extraText3.style.display = "none";
@@ -67,6 +76,9 @@ var readMoreBtn3 = document.getElementById("extraText3")
 
           readMoreBtn3.style.display = "none";
           extraText3.style.display = "block";
+
+          readMoreBtn4.style.display = "none";
+          extraText4.style.display = "block";
       }
   }
 
@@ -95,6 +107,18 @@ var readMoreBtn3 = document.getElementById("extraText3")
     } else {
         extraText3.style.display = "none";
         extraText3.dataset.toggled = "false";
+        this.innerText = "Read More";
+    }
+});
+
+readMoreBtn4.addEventListener("click", function() {
+    if (extraText4.style.display === "none" || extraText4.style.display === "") {
+        extraText4.style.display = "block";
+        extraText4.dataset.toggled = "true";
+        this.innerText = "Read Less";
+    } else {
+        extraText4.style.display = "none";
+        extraText4.dataset.toggled = "false";
         this.innerText = "Read More";
     }
 });
