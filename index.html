@@ -220,7 +220,7 @@
         <br>
         
         <fieldset class="flex-container">
-            <img src="animal.jpg" alt="Animals" class="animal-img" class="image-container">
+          <img src="animal.jpg" alt="Animals" class="animal-img" class="image-container">
             <div class="text">
                 <p><strong>Animals - <em>Pink Floyd</em></strong></p>
                 <p>Animals is another incredible Pink Floyd album, and another one of my personal favorites, with the musical styles and the shockingly long “Dogs”</p>
@@ -305,7 +305,7 @@
             The song talks about the man's dark side and how he worries that he will be treated differently if he shows it, with lines like “And if I show you my dark side /Will you still hold me tonight? /And if I open my heart to you/And show you my weak side /What would you do?” and then talks about a failed suicide attempt. “I held the blade in trembling hands /Prepared to make it but just then the phone rang /I never had the nerve to make the final cut”.<br>
             Not Now John is the only song to feature Gilmour as the lead vocals, and is one of the only Pink Floyd tracks with strong profanity. <br>
             Two Suns In The Sunset portrays a nuclear holocaust as a result of a world obsessed with war and fighting. “It's day again/The sun is in the east/Even though the day is done/Two suns in the sunset/Could be the human race is run?” talking about a nuclear mushroom cloud in the east as a second sun, and mentions the things left undone “I think of all the good things/That we have left undone”. The album ends with the lines “Finally I understand the feelings of the few/Ashes and diamonds/Foe and friend/We were all equal in the end”.
-            <br>Overall Rating: 10/10, some incredible themes and great story however there are definitely some better albums.<br>
+            <br><br>Overall Rating: 10/10, some incredible themes and great story however there are definitely some better albums.<br>
           </p>
       </span>
       <button class="centered" id="extraText5">Read More</button>
@@ -339,41 +339,36 @@
     border-radius: 2px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
-.animal-img{
-  max-width: 50%;
-  height: auto;
-  max-height: auto;
-  border-radius: 2px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  object-fit: scale-down;
+.animal-img {
+    max-width: 50%; /* Restrict scaling */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    object-fit: contain; /* Ensures full image is visible */
 }
 
 /* Ensure text takes full width */
 .text {
-    width: 100%; /* Make text span full width */
+    width: 100%; /* Allow text to span full width */
     font-size: 1.2em;
 }
 
+/* Restrict container size */
 .image-container {
-    width: 50%; /* Restrict container size */
-    max-width: 25%;
-    max-width: 25%; /* Ensures image never exceeds container */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 25%; /* Restricts excessive scaling */
-    width: auto; /* Prevents forced stretching */
-    object-fit: contain; 
-}
-.image-container img {
-    height: auto !important;
-    width: 25% !important; /* Restrict container size */
-    max-width: 25% !important;
-    max-width: 25% !important; /* Ensures image never exceeds container */
-    height: auto !important; /* Maintains aspect ratio */
-    max-height: 25% !important; /* Restricts excessive scaling */
-    width: auto !important; /* Prevents forced stretching */
-    object-fit: contain !important; 
+    width: 50%; /* Adjust width */
+    max-width: 400px; /* Set a max limit */
+    height: auto;
+    overflow: hidden; /* Prevent unwanted stretching */
 }
 
+/* Ensure image does not scale excessively */
+.image-container img{
+    max-width: 100%; /* Fit within parent */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below image */
+    margin: 0 auto; /* Center image horizontally */
+    object-fit: cont
+}
 
 
 
