@@ -356,7 +356,12 @@
 
 .image-container {
     width: 50%; /* Restrict container size */
-    max-width: 600px;
+    max-width: 25%;
+    max-width: 25%; /* Ensures image never exceeds container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 25%; /* Restricts excessive scaling */
+    width: auto; /* Prevents forced stretching */
+    object-fit: contain; 
 }
 .image-container img {
     width: 100%;
