@@ -220,7 +220,7 @@
         <br>
         
         <fieldset class="flex-container">
-            <img src="animal.jpg" alt="Animals" class="animal-img">
+            <img src="animal.jpg" alt="Animals" class="animal-img" class="image-container">
             <div class="text">
                 <p><strong>Animals - <em>Pink Floyd</em></strong></p>
                 <p>Animals is another incredible Pink Floyd album, and another one of my personal favorites, with the musical styles and the shockingly long “Dogs”</p>
@@ -353,6 +353,16 @@
     width: 100%; /* Make text span full width */
     font-size: 1.2em;
 }
+
+.image-container {
+    width: 50%; /* Restrict container size */
+    max-width: 600px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 
