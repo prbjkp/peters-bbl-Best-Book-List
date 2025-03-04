@@ -356,23 +356,25 @@
 
 /* Restrict container size */
 .image-container {
-    width: fit-content; /* Adjust width */
+    width: 50%; /* Adjust width */
     max-width: 400px; /* Set a max limit */
     height: auto;
     overflow: hidden; /* Prevent unwanted stretching */
-    border-radius: 2px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Ensure image does not scale excessively */
-.image-container img{
-    max-width: 75%; /* Fit within parent */
+.image-container img {
+    max-width: 100%; /* Fit within parent */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra spacing below image */
     margin: 0 auto; /* Center image horizontally */
-    object-fit: cont;
-    border-radius: 2px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    object-fit: contain; /* Prevent distortion */
+}
+
+/* Center button */
+button.centered {
+    display: block;
+    margin: 20px auto; /* Center the button */
 }
 
 
