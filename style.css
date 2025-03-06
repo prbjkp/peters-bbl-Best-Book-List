@@ -407,6 +407,14 @@ nav a {
     width: 100%; /* Ensures it spans full width */
   }
 
+  @media screen and (max-width: 768px) {
+    .myNav {
+      display: flex !important;
+      justify-content: center !important; /* Centers horizontally */
+      width: 100% !important; /* Ensures it spans full width */
+  }}
+
+
   #read-more-btn {
     display: inline-block; /* Make button visible */
   }
