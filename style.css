@@ -429,3 +429,11 @@ nav a {
  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
  place-content: center
 }
+
+fieldset {
+  border: 2px solid black; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
