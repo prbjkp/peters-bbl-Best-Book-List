@@ -430,6 +430,7 @@ nav a {
  place-content: center
 }
 
+
 fieldset {
   border: 2px solid black; /* Green border */
   border-radius: 8px; /* Rounded corners */
