@@ -12,7 +12,7 @@ html, body {
 
 /* Background gradient */
 body {
-  background-image: linear-gradient(to right, lightgreen, lightblue);
+  background-image: linear-gradient(to right, darkblue lightblue);
 }
 
 
