@@ -1,26 +1,5 @@
 /* Full width and height for the page */
-/* html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: flex-start;/*
-}
-
-
-/* Background gradient */
-/* body {
-  background-image: linear-gradient(to right, lightgreen, lightblue);
-}
-
-
-
-
-/* Header styles */
-
-body, html {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -28,30 +7,18 @@ body, html {
   flex-direction: column;
   align-items: center; 
   justify-content: flex-start;
-
-* {
-  box-sizing: border-box;
 }
 
-.bg-image {
-  /* Full height */
-  height: 50%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+ body {
+  background-image: linear-gradient(to right, lightgreen, lightblue);
 }
 
-/* Images used */
-.img1 { background-image: url("bird1.jpg"); }
-.img2 { background-image: url("bird2.jpg"); }
-.img3 { background-image: url("bird3.jpg"); }
-.img4 { background-image: url("bird4.jpg"); }
-.img5 { background-image: url("bird5.jpg"); }
-.img6 { background-image: url("bird6.jpg"); }
 
-}
+
+
+/* Header styles */
 
 h1 {
   text-align: center;
